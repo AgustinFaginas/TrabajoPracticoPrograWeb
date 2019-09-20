@@ -1,7 +1,38 @@
-*{
-    padding: 0px;
-    margin: 0px;
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
 }
+
+h1,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1
+{
+  color: #333;
+}
+
+h2
+{
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  color: #666;
+}
+
+ol,
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .section-A{
     display: flex;
     position: relative;
@@ -51,11 +82,11 @@
   background-color: #fff159;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .footer-M div
 {
-  border: 1px solid red;
   color: #333;
 }
 
