@@ -6,7 +6,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    background-image: url(../img/fondo.jpg);
+    background-color: #fff159;
     height: 100px;
 }
 .carrito-A{
@@ -48,7 +48,7 @@
 
 .footer-M
 {
-  background-image: url(../img/fondo.jpg);
+  background-color: #fff159;
   display: flex;
   justify-content: space-around;
 }
@@ -56,6 +56,7 @@
 .footer-M div
 {
   border: 1px solid red;
+  color: #333;
 }
 
 .social-link
@@ -65,7 +66,8 @@
   height: 50px;
   background-size: 50px 50px;
   margin: 0px 10px;
-  background-color: #a18c13;
+  background-color:#333;
+  border-radius: 3px;
 }
 
 .social-link.twitter
