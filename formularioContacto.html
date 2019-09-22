@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario contacto</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/formularioContacto.css">
+  </head>
+  <body>
+    <header>
+     <section class="section-A">
+      <img src="./img/logo.png" alt="logo" class="logo-A" width="130px">
+      <datalist id="lista">
+          <option value="Cursos"></option>
+          <option value="Contacto"></option>
+          <option value="Calendario"></option>
+      </datalist>
+      <label for="buscador"></label>
+      <input type="text" id="buscador-A" name="buscador" placeholder="Busque aqui" list="lista">
+      <div class="carrito-A">
+          <div class="circulito-A">1</div>
+      </div>
+        </section>
+    </header>
+    <section class="contacto-M">
+      <h1>Contacto</h1>
+      <div>
+        <form class="formulario" action="/action_page.php" method="post">
+          <label for="nombreApellido">Nombre y Apellido:</label>
+          <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Escribir nombre y apellido" required><br>
+          <label for="email">Mail:</label>
+          <input type="email" name="email" id="email" placeholder="Escribir mail" required><br>
+          <label for="telefono">Teléfono(opcional):</label>
+          <input type="tel" nombre="tel" id="telefono" placeholder="Escribir teléfono"><br>
+          <label for="consulta">Escriba su consulta:</label>
+          <textarea name="consulta" id="consulta" rows="8" cols="80"  maxlength="320" required></textarea><br>
+          <button type="button" name="button">Enviar</button>
+        </form>
+      </div>
+      <div>
+        <h3>Sobre nosotros</h3>
+        <p>Full age sex set feel her told. Tastes giving in passed direct me valley as supply. End great stood boy noisy often way taken short. Rent the size our more door. Years no place abode in ﻿no child my. Man pianoforte too solicitude friendship devonshire ten ask. Course sooner its silent but formal she led. Extensive he assurance extremity at breakfast. Dear sure ye sold fine sell on. Projection at up connection literature insensible motionless projecting.
+
+Cultivated who resolution connection motionless did occasional. Journey promise if it colonel. Can all mirth abode nor hills added. Them men does for body pure. Far end not horses remain sister. Mr parish is to he answer roused piqued afford sussex. It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears are day blind smile alone had.
+
+Boy favourable day can introduced sentiments entreaties. Noisier carried of in warrant because. So mr plate seems cause chief widen first. Two differed husbands met screened his. Bed was form wife out ask draw. Wholly coming at we no enable. Offending sir delivered questions now new met. Acceptance she interested new boisterous day discretion celebrated.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Ubicación</h2>
+      </div>
+      <figure>
+        <img src="./img/map.png" alt="imagen de mapa">
+      </figure>
+    </section class="mapa-M">
+    <footer class="footer-M">
+      <div>
+        <h3>Datos del grupo</h3>
+        <ul>
+          <li>Sanchez Matias</li>
+          <li>Faginas Agustin</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <ul>
+          <li>Inicio</li>
+          <li>Cursos</li>
+          <li>Medios de Pago</li>
+        </ul>
+      </div>
+      <div class="social-M">
+        <a href="https://twitter.com" class="social-link twitter" target="_blank"></a>
+        <a href="https://facebook.com" class="social-link facebook" target="_blank"></a>
+        <a href="https://github.com" class="social-link github" target="_blank"></a>
+        <a href="https://instagram.com" class="social-link instagram" target="_blank"></a>
+      </div>
+    </footer>
+  </body>
+</html>

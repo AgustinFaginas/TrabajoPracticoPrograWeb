@@ -1,0 +1,144 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  background-color: #ebebeb;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1
+{
+  color: #333;
+}
+
+h2
+{
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  color: #666;
+}
+
+ol,
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-A{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #fff159;
+    height: 100px;
+}
+.carrito-A{
+    background-image: url(../img/carrito.png);
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-size:cover;
+    position: absolute;
+    right: 20px;
+
+}
+#buscador-A{
+    position: absolute;
+    left: 25%;
+    width: 700px;
+    height: 30px;
+}
+.logo-A{
+    width: 130px;
+    height: 100px;
+}
+.circulito-A{
+    background-color: white;
+    border-color: black;
+    border-width: medium;
+     width: 12px;
+     height: 12px;
+      border-radius: 50%;
+     margin: 10px;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight:bold;
+}
+
+.contacto-M
+{
+  color: #666;
+}
+
+.formulario input
+{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  margin: 10px 0;
+}
+
+.formulario button
+{
+  background: #fff159;
+  color: #333;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.footer-M
+{
+  background-color: #fff159;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-M div
+{
+  color: #333;
+}
+
+.social-link
+{
+  display:inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0px 10px;
+  background-color:#333;
+  border-radius: 3px;
+}
+
+.social-link.twitter
+{
+  background-image: url('../img/twitter.svg');
+}
+.social-link.facebook
+{
+  background-image: url('../img/facebook.svg');
+}
+.social-link.github
+{
+  background-image: url('../img/github.svg');
+}
+.social-link.instagram
+{
+  background-image: url('../img/instagram.svg');
+}
