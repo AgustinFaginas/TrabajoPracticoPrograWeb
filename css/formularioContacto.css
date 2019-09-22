@@ -81,9 +81,25 @@ ul
 .contacto-M
 {
   color: #666;
+  margin: 10px;
+}
+
+.contacto-formulario-datos-M
+{
+  display: flex;
+  justify-content: space-around;
 }
 
 .formulario input
+{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  margin: 10px 0;
+}
+
+.formulario textarea
 {
   border-color: gray;
   border-style: solid;
@@ -98,8 +114,44 @@ ul
   color: #333;
   padding: 10px 0px;
   border-radius: 5px;
-  width: 100px;
+  width: 150px;
   margin-top: 10px;
+  align-self: center;
+}
+
+.formulario
+{
+  border: 1px solid #333;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-datos-M
+{
+  border: 1px solid #333;
+  background-color: white;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.ubicacion
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ubicacion div, figure
+{
+align-self:center;
 }
 
 .footer-M
