@@ -16,6 +16,11 @@ h6
 h1
 {
   color: #333;
+  text-align: center;
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    background-color: #ebebeb;
 }
 
 h2
@@ -116,4 +121,143 @@ ul
 .social-link.instagram
 {
   background-image: url('../img/instagram.svg');
+}
+.lenguajes{
+    width: 100%;
+    height: 400px;
+}
+main{
+    background-color:#ebebeb;
+    
+}
+.pasos{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+    
+    
+}
+
+.paso1{
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    border:3px solid black;
+    padding: 5px;
+    background-color: white;
+    border: 10px solid yellow;
+}
+.paso2{
+    position: absolute;
+    left: 40%;
+    top: 30px;
+     border:3px solid black;
+    padding: 5px;
+    background-color: white;
+    border: 10px solid yellow;
+}
+.paso3{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+     border:3px solid black;
+    padding: 5px;
+    background-color: white;
+    border: 10px solid yellow;
+}
+.ofertas1{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
+    
+}
+.ofertas1 button{
+    background: #fff159;
+    color: #333;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 80px;
+    align-self: center;
+    
+}
+.ofertas1 div{
+    text-align: left;
+    background-color: #ebebeb;
+    width: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.item1{
+ position: absolute;
+    left: 50px;
+    background-color: white;
+    width: 150px;
+    border: 3px solid yellow;
+    padding: 10px;
+    
+    
+}
+.item1img{
+    width: 100%;
+}
+
+.item2{
+    position: absolute;
+    left: 40%;
+    background-color: white;
+    width: 150px;
+    border: 3px solid yellow;
+    padding: 10px;
+    
+}
+.item2img{
+    width: 100%;
+}
+.item3{
+    position: absolute;
+    right: 30px;
+    background-color: white;
+    width: 150px;
+    border: 3px solid yellow;
+    padding: 10px;
+    
+}
+.item3img{
+    width: 100%;
+    height:auto;
+}
+.precio{
+    color: white;
+    background-color: black;
+    width: 45px;
+    position: absolute;
+    top: 15px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.mediosDePago{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+h5,h2{
+    font-size: 20px;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: white;
 }
