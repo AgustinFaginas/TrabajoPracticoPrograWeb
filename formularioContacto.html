@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/formularioContacto.css">
   </head>
   <body>
-    <header>
+    <header id="header-id">
      <section class="section-A">
       <img src="./img/logo.png" alt="logo" class="logo-A" width="130px">
       <datalist id="lista">
@@ -22,23 +22,29 @@
           <div class="circulito-A">1</div>
       </div>
         </section>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#header-id">Inicio</a></li>
+          <li><a href="#contacto-id">Contacto</a></li>
+          <li><a href="#ubicacion-id">Ubicación</a></li>
+        </ul>
+      </div>
     </header>
-    <section class="contacto-M">
+    <section id="contacto-id" class="contacto-M">
       <h1>Contacto</h1>
-      <div>
-        <form class="formulario" action="/action_page.php" method="post">
+      <article class="contacto-formulario-datos-M">
+        <form class="formulario" action="/action_page.php" method="get">
           <label for="nombreApellido">Nombre y Apellido:</label>
           <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Escribir nombre y apellido" required><br>
           <label for="email">Mail:</label>
           <input type="email" name="email" id="email" placeholder="Escribir mail" required><br>
           <label for="telefono">Teléfono(opcional):</label>
           <input type="tel" nombre="tel" id="telefono" placeholder="Escribir teléfono"><br>
-          <label for="consulta">Escriba su consulta:</label>
-          <textarea name="consulta" id="consulta" rows="8" cols="80"  maxlength="320" required></textarea><br>
+          <label for="consulta">Consulta:</label>
+          <textarea name="consulta" id="consulta" rows="8" cols="50"  maxlength="320" required></textarea><br>
           <button type="button" name="button">Enviar</button>
         </form>
-      </div>
-      <div>
+      <div class="contacto-datos-M">
         <h3>Sobre nosotros</h3>
         <p>Full age sex set feel her told. Tastes giving in passed direct me valley as supply. End great stood boy noisy often way taken short. Rent the size our more door. Years no place abode in ﻿no child my. Man pianoforte too solicitude friendship devonshire ten ask. Course sooner its silent but formal she led. Extensive he assurance extremity at breakfast. Dear sure ye sold fine sell on. Projection at up connection literature insensible motionless projecting.
 
@@ -47,29 +53,30 @@ Cultivated who resolution connection motionless did occasional. Journey promise 
 Boy favourable day can introduced sentiments entreaties. Noisier carried of in warrant because. So mr plate seems cause chief widen first. Two differed husbands met screened his. Bed was form wife out ask draw. Wholly coming at we no enable. Offending sir delivered questions now new met. Acceptance she interested new boisterous day discretion celebrated.
         </p>
       </div>
+      </article>
     </section>
-    <section>
+    <section id="ubicacion-id" class="ubicacion">
       <div>
         <h2>Ubicación</h2>
       </div>
       <figure>
         <img src="./img/map.png" alt="imagen de mapa">
       </figure>
-    </section class="mapa-M">
+    </section>
     <footer class="footer-M">
       <div>
-        <h3>Datos del grupo</h3>
+        <h5>Datos del grupo</h5>
         <ul>
-          <li>Sanchez Matias</li>
-          <li>Faginas Agustin</li>
+          <li>Sanchez Matias(39.744.903)</li>
+          <li>Faginas Agustin(42.649.660)</li>
         </ul>
       </div>
       <div>
-        <h3>Menu</h3>
+        <h5>Menu</h5>
         <ul>
-          <li>Inicio</li>
-          <li>Cursos</li>
-          <li>Medios de Pago</li>
+          <li><a href="#header-id">Inicio</a></li>
+          <li><a href="#contacto-id">Contacto</a></li>
+          <li><a href="#ubicacion-id">Ubicación</a></li>
         </ul>
       </div>
       <div class="social-M">

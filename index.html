@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
-    <header>
+    <header id="header-id">
      <section class="section-A">
       <img src="./img/logo.png" alt="logo" class="logo-A" width="130px">
       <datalist id="lista">
@@ -22,17 +22,24 @@
           <div class="circulito-A">1</div>
       </div>
         </section>
-        <h1>Menu</h1>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#header-id">Inicio</a></li>
+            <li><a href="#cursos-id">Cursos</a></li>
+            <li><a href="#pasos-id">Pasos</a></li>
+            <li><a href="#mediosDePago-id">Medios de pago</a></li>
+          </ul>
+        </div>
     </header>
     <main>
     <section>
       <img src="./img/lenguajes.jpg" alt="lenjuagjes" class="lenguajes">
     </section>
-    
+
     <section>
-      <h2 class="palabraPasos">Pasos</h2>
+      <h2 class="palabraPasos" id="pasos-id">Pasos</h2>
     </section>
-    <section class="pasos">
+    <section class="pasos" >
         <article class="paso1">
             <img src="./img/uno.png" alt="paso1" width="30px;">
             <p>Primero busca el curso del lenguaje </p>
@@ -49,7 +56,7 @@
            <p> y recibiras un mail con la informacion necesario</p>
         </article>
         </section>
-        <h2>Cursos destacados</h2>
+        <h2 id="cursos-id">Cursos destacados</h2>
         <section class="ofertas1">
            <article class="item1">
             <img src="./img/java.jpg" alt="java" width="100px" class="item1img">
@@ -97,15 +104,15 @@
             </article>
         </section>
         <h5>Medios de pago</h5>
-        <section class="mediosDePago">
-      
+        <section class="mediosDePago" id="mediosDePago-id">
+
             <article class="visa">
                 <img src="./img/visa.jpg" alt="visa" width="200px">
             </article>
             <article class="mastercard">
                 <img src="./img/mastercard.png" alt="mater" width="200px">
             </article>
-            <article class="cabal"> 
+            <article class="cabal">
             <img src="./img/cabal.jpg" alt="cabal" width="200px">
             </article>
             <article class="naranja">
@@ -117,16 +124,17 @@
       <div>
         <h3>Datos del grupo</h3>
         <ul>
-          <li>Sanchez Matias</li>
-          <li>Faginas Agustin</li>
+          <li>Sanchez Matias(39.744.903)</li>
+          <li>Faginas Agustin(42.649.660)</li>
         </ul>
       </div>
       <div>
         <h3>Menu</h3>
         <ul>
-          <li>Inicio</li>
-          <li>Cursos</li>
-          <li>Medios de Pago</li>
+          <li><a href="#header-id">Inicio</a></li>
+          <li><a href="#cursos-id">Cursos</a></li>
+          <li><a href="#pasos-id">Pasos</a></li>
+          <li><a href="#mediosDePago-id">Medios de pago</a></li>
         </ul>
       </div>
       <div class="social-M">
