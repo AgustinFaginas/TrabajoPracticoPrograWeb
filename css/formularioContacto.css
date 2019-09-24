@@ -23,7 +23,6 @@ h2
 {
   font-family: 'Source Sans Pro';
   font-weight: bold;
-  color: #666;
 }
 
 ol,
@@ -34,16 +33,25 @@ ul
     list-style: none;
 }
 
+a
+{
+  text-decoration: none;
+  color: #333;
+}
+
+header
+{
+  background-color: #fff159;
+}
+
 .section-A{
     display: flex;
     position: relative;
     align-items: center;
-    background-color: #fff159;
     height: 100px;
 }
 .carrito-A{
     background-image: url(../img/carrito.png);
-
     display: block;
     width: 50px;
     height: 50px;
@@ -78,9 +86,22 @@ ul
     font-weight:bold;
 }
 
+.nav-menu ul
+{
+  display:flex;
+  justify-content: space-evenly;
+
+}
+
+.nav-menu ul a:hover
+{
+  font-weight: bold;
+}
+
+
 .contacto-M
 {
-  color: #666;
+  color: #333;
   margin: 10px;
 }
 
@@ -88,6 +109,7 @@ ul
 {
   display: flex;
   justify-content: space-around;
+
 }
 
 .formulario input
@@ -165,6 +187,16 @@ align-self:center;
 .footer-M div
 {
   color: #333;
+}
+
+.footer-M h5
+{
+  font-size: 21px;
+}
+
+.footer-M a:hover
+{
+  text-decoration: underline;
 }
 
 .social-link
