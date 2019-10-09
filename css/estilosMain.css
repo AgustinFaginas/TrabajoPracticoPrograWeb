@@ -1,0 +1,172 @@
+*{
+	background-color: #202020;
+	font-family:'Roboto';
+	margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 10000px;
+}
+
+header, main{
+    margin: auto;
+    box-sizing: border-box;
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+.header
+{
+   background-color: #2b2b2b;
+}
+
+.header header
+{
+    width: 100%;
+}
+
+.nav-menu{
+	clear: both;
+	margin-top: 2%;
+}
+
+.nav-menu ul
+{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.nav-menu li
+{
+  padding: 1%;
+  background-color: #2b2b2b;
+}
+
+.nav-menu li a
+{
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  color: #fff;
+}
+
+.nav-menu ul a:hover
+{
+  font-weight: bold;
+}
+
+.header input
+{	
+	box-sizing: border-box;
+    padding: 10px 2px 5px 5px;
+    display: block;
+    width: 70%;
+    background-color: #2b2b2b;
+    color: #fff;
+    position: absolute;
+    float: left;
+    top: 6%;
+    left: 17%;
+   	-webkit-border-radius: 150px;
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+	-moz-border-radius: 150px;
+	-moz-border-radius-topright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	border-radius: 150px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#logo{
+	float: left;
+	position: relative;
+	left: 15px;
+	top:10px;
+	background-color: #2b2b2b;
+	width: 10%;
+}
+
+#carrito{
+	float: right;
+	position: relative;
+	background-color: #2b2b2b;
+	top:30px;
+	right: 50px;
+	width: 3%;
+}
+
+main section{
+	position: relative;
+	clear: both;
+	height: 300px;
+}
+
+main section img{
+	float: left;
+	position: absolute;
+	top :10%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+}
+
+h1, h3, h4, h5, h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+section h2{
+    background-color: #2b2b2b;
+    margin-top: 3;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    margin-top: 1%;
+}
+
+#java{
+	float: left;
+	position: absolute;
+	top :10%;
+	left: 5%;
+	width: 15%;
+	height: 35%;
+}
+
+.articles article{
+	display: flex;
+}
+
+.contenedorCursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedorCursos img{
+    max-width: 100%;
+}
+.contenedorCursos article{
+    width:calc(30% - 20px);
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.contenedorImagen{
+    position:relative;
+}
+.textoDerecha{
+    text-align:right;
+    padding:7px;
+}
+
