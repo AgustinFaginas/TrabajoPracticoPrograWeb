@@ -51,6 +51,10 @@ body{
   font-weight: bold;
 }
 
+header{
+  position: relative;
+}
+
 .header input
 {	
   text-decoration: none;
@@ -67,7 +71,7 @@ body{
     color: #fff;
     position: absolute;
     float: left;
-    top: 6%;
+    top: 20%;
     left: 17%;
 	border-radius: 150px;
 	border-top-right-radius: 15px;

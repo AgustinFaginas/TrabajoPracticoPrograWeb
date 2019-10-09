@@ -3,9 +3,64 @@
 	float: left;
 	position: absolute;
 	top :10%;
-	left: 5%;
-	width: 15%;
-	height: 35%;
+	left: 7%;
+	height: 55%;
+}
+
+#node{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 17%;
+  height: 45%;
+}
+
+#rubi{
+  float: left;
+  position: absolute;
+  top :10%;
+  left: 27%;
+  height: 36%;
+}
+
+#python{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 37%;
+  height: 40%;
+}
+
+#react{
+  float: left;
+  position: absolute;
+  top :10%;
+  left: 47%;
+  height: 50%;
+}
+
+#mysql{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 60%;
+  height: 40%;
+}
+
+#csharp{
+  float: left;
+  position: absolute;
+  top :10%;
+  left: 70%;
+  height: 40%;
+}
+
+#web{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 77%;
+  height: 55%;
 }
 
 .contenedorPasos{
@@ -66,6 +121,16 @@
     margin-bottom: auto;
  }
 
+#background{
+  max-width: 100%;
+  min-width: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: -1
+}
 
 h2{
   text-align: center;
@@ -119,6 +184,12 @@ h2{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+ }
+
+ .carrousel{
+    position: relative;
+    overflow: hidden;
+    height: 350px;
  }
 
 
