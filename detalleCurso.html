@@ -3,10 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Detalle Curso</title>
-    <link rel="stylesheet" href="../cssDetalleCurso.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
   </head>
-  <header>
-  </header>
+  <header id="header-id" class="header">
+     <section>
+      	<img src="./img/logo.png" alt="logo" id="logo">
+      	<label for="buscador"></label>
+      	<input type="text" id="buscador" name="buscador" placeholder="Busque aqui" list="lista">
+      	<img src="./img/retail/049-shopping-cart.png" alt="logo" id="carrito">
+      </section>
+        <div class="nav-menu header">
+          <ul class="header">
+            <li><a href="#header-id">Inicio</a></li>
+            <li><a href="#cursos-id">Cursos</a></li>
+            <li><a href="#pasos-id">Pasos</a></li>
+            <li><a href="#mediosDePago-id">Medios de pago</a></li>
+          </ul>
+        </div>
+    </header>
   <body>
     <section class="detalle-curso">
       <div class="informacion-curso">
@@ -45,74 +61,80 @@
       </div>
     </section>
     <section>
-        <div class="contenedorCursos">
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso1-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+      <div class="contenedorCursos">
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/java.png" alt="java">
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso2-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/rubi.png" alt="rubi" >
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso3-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/python.png" alt="python">
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso4-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/node.png" alt="node">
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-        </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
     </section>
   </body>
-  <footer>
-  </footer>
+  <footer class="footer">
+      <div>
+        <h3>Datos del grupo</h3>
+        <ul>
+          <li>Sanchez Matias(39.744.903)</li>
+          <li>Faginas Agustin(42.649.660)</li>
+          <li>Marcos Cervera(39.268.060)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#header-id">Inicio</a></li>
+          <li><a href="#cursos-id">Cursos</a></li>
+          <li><a href="#pasos-id">Pasos</a></li>
+          <li><a href="#mediosDePago-id">Medios de pago</a></li>
+        </ul>
+      </div>
+      <div class="social-M">
+        <img src="./img/social-media/043-twitter.png" alt="twitter">
+        <img src="./img/social-media/039-deviantart.png" alt="deviantart">
+        <img src="./img/social-media/029-telegram.png" alt="telegram">
+        <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
+        <img src="./img/social-media/038-github.png" alt="github">
+        <img src="./img/social-media/013-skype.png" alt="skype">
+        <img src="./img/social-media/016-twitch.png" alt="twitch">
+        <img src="./img/social-media/021-facebook.png" alt="facebook">
+      </div>
+    </footer>
 </html>

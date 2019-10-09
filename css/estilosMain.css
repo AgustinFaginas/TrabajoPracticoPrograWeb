@@ -29,8 +29,8 @@
 .contenedorPasos h4{
   padding: 2%;
   font-family: sans-serif;
-    font-size: 25px;
-    font-style: italic;
+  font-size: 25px;
+  font-style: italic;
 }
 .contenedorPasos p{
   margin-left: 10px;
@@ -121,6 +121,238 @@ h2{
     margin-bottom: auto;
  }
 
+/*------------Formulario Contacto-----------*/
+ .contacto
+ {
+   margin: 10px;
+   display: flex;
+   justify-content: space-around;
+	 font-family: 'Source Sans';
+ }
+
+ .formulario
+ {
+   margin-right: 5em;
+	 background-color: #b2b2b2;
+	 color: #333;
+	 border: 1px solid #121212;;
+	 width: 600px;
+	 weight: 500px;
+	 border-radius: 10px;
+	 padding: 50px;
+	 display: flex;
+	 flex-direction: column;
+ }
+
+ .formulario input
+ {
+	 border-color: #121212;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 10px 20px 10px 25px;
+   margin: 10px 0;
+ }
+
+ .formulario textarea
+ {
+	 border-color: #121212;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 10px 20px 10px 25px;
+   margin: 10px 0;
+ }
+
+ .formulario button
+ {
+   background: white;
+   color: #333;
+	 border-color: #121212;
+   padding: 10px 0px;
+   border-radius: 30px;
+   width: 150px;
+   margin-top: 10px;
+   align-self: center;
+ }
+
+ .contacto-datos
+ {
+	 color: #333;
+   border: 1px solid #121212;
+   background-color: #b2b2b2;
+   width: 600px;
+   height: 500px;
+   border-radius: 10px;
+   padding: 50px;
+	 text-align:justify;
+ }
+
+ .ubicacion
+ {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .ubicacion div, article
+ {
+ align-self:center;
+ }
+
+ .mapa
+ {
+   border: 1px solid #121212;;
+ }
+
+/*------------Detalle Curso-----------*/
+
+.detalle-curso
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen-detalle-curso
+{
+  margin: 2em;
+}
+
+.detalle-docente
+{
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1.5em;
+  margin: 1em;
+}
+
+.detalle-docente img
+{
+  height: 100%;
+  margin: 0.8em;
+}
+
+/*------------Gift Card-----------*/
 
 
+.seccion-gift-card
+{
+  display: flex;
+  justify-content: space-between;
+	font-family: 'Source Sans';
+}
+.contenedorImagen
+{
+	position: relative;
+	margin-right: 1em;
+	margin-top: 2em;
+}
 
+.gift-card-img-personalizacion
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.gift-card-img-personalizacion h3
+{
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	background-color: #2b2b2b;
+}
+
+.contenedorImagen img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.contenedorImagen h4
+{
+  position: absolute;
+  right:0px;
+  bottom: 625px;
+  background-color:#b2b2b2;
+  padding:32px;
+	font-size: 24px;
+	border: 1px solid #121212;
+	color: #333;
+}
+
+.gift-card-opc-personalizacion
+{
+	background-color: #b2b2b2;
+	color: #333;
+	border: 1px solid #121212;
+	border-radius: 10px;
+	padding: 3em;
+	margin: 1em;
+}
+
+.formulario-personalizacion h4, label
+{
+	margin: 1em 0;
+	font-size:20px;
+}
+
+.formulario-personalizacion input
+{
+	border: 1px solid #121212;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 10px 20px 10px 25px;
+	margin: 10px 0;
+}
+
+.formulario-personalizacion button
+{
+	background: white;
+  color: #333;
+  border: 1px solid #121212;
+  padding: 10px 0px;
+  border-radius: 30px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.circulo
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #121212;
+}
+
+#circulo-rojo
+{
+  background-color: red;
+}
+
+#circulo-amarillo
+{
+  background-color: yellow;
+}
+
+#circulo-verde
+{
+  background-color: green;
+}
+
+#circulo-marron
+{
+  background-color: brown;
+}
+
+.divicion-selector
+{
+  display: flex;
+  justify-content:space-around;
+}
+
+.divicion-selector img
+{
+	border: 1px solid #121212;
+}
