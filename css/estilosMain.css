@@ -3,9 +3,64 @@
 	float: left;
 	position: absolute;
 	top :10%;
-	left: 5%;
-	width: 15%;
-	height: 35%;
+	left: 7%;
+	height: 55%;
+}
+
+#node{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 17%;
+  height: 45%;
+}
+
+#rubi{
+  float: left;
+  position: absolute;
+  top :10%;
+  left: 27%;
+  height: 36%;
+}
+
+#python{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 37%;
+  height: 40%;
+}
+
+#react{
+  float: left;
+  position: absolute;
+  top :10%;
+  left: 47%;
+  height: 50%;
+}
+
+#mysql{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 60%;
+  height: 40%;
+}
+
+#csharp{
+  float: left;
+  position: absolute;
+  top :10%;
+  left: 70%;
+  height: 40%;
+}
+
+#web{
+  float: left;
+  position: absolute;
+  top :50%;
+  left: 77%;
+  height: 55%;
 }
 
 .contenedorPasos{
@@ -66,6 +121,16 @@
     margin-bottom: auto;
  }
 
+#background{
+  max-width: 100%;
+  min-width: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: -1
+}
 
 h2{
   text-align: center;
@@ -119,6 +184,12 @@ h2{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+ }
+
+ .carrousel{
+		position: relative;
+		overflow: hidden;
+		height: 350px;
  }
 
 /*------------Formulario Contacto-----------*/
@@ -216,22 +287,53 @@ h2{
 .imagen-detalle-curso
 {
   margin: 2em;
+	max-width: 25%;
+	height: auto;
+}
+
+.informacion-curso button
+{
+	background: white;
+	color: #333;
+	border: 1px solid #121212;
+	padding: 10px 0px;
+	border-radius: 30px;
+	width: 150px;
+	margin-top: 10px;
 }
 
 .detalle-docente
 {
   display: flex;
   justify-content: flex-start;
-  border: 1px solid #000;
+  border: 1px solid #121212;
   border-radius: 5px;
-  padding: 1.5em;
-  margin: 1em;
+  padding: 2em;
+	background-color:#b2b2b2;
+	color: #333;
 }
 
 .detalle-docente img
 {
-  height: 100%;
-  margin: 0.8em;
+	max-width: 100%;
+	height: auto;
+  margin: 1em;
+	border-radius: 50%;
+}
+
+.lista-despegable ul
+{
+	list-style: none;
+}
+
+.lista-despegable ul li
+{
+	margin-bottom: 3%;
+}
+
+.lista-despegable ul li:hover
+{
+	background-color: white;
 }
 
 /*------------Gift Card-----------*/
