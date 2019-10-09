@@ -3,39 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>Detalle Curso</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
   </head>
-  <header>
-  </header>
+  <header id="header-id" class="header">
+     <section>
+      	<img src="./img/logo.png" alt="logo" id="logo">
+      	<label for="buscador"></label>
+      	<input type="text" id="buscador" name="buscador" placeholder="Busque aqui" list="lista">
+      	<img src="./img/retail/049-shopping-cart.png" alt="logo" id="carrito">
+      </section>
+        <div class="nav-menu header">
+          <ul class="header">
+            <li><a href="#header-id">Inicio</a></li>
+            <li><a href="#cursos-id">Cursos</a></li>
+            <li><a href="#pasos-id">Pasos</a></li>
+            <li><a href="#mediosDePago-id">Medios de pago</a></li>
+          </ul>
+        </div>
+    </header>
   <body>
     <section class="detalle-curso">
-      <figure>
-        <img src="img/javascript.png" alt="foto del curso" width="15%">
-      </figure>
       <div class="informacion-curso">
         <h2>Curso avanzado javascript</h2>
-        <li>
-          <ol>Valor:</ol>
-          <ol>Tiempo de dedicación:</ol>
-          <ol>Descripción del curso:</ol>
-          <ol>Requisitos previos:</ol>
+        <li class="">
+          <ol>Valor: 2500$</ol>
+          <ol>Tiempo de dedicación: 8hs semanales</ol>
+          <ol>Descripción del curso: Avanzado</ol>
+          <ol>Requisitos previos: Saber las bases de programación</ol>
         </li>
         <button type="button" name="button">Inscribirse</button>
         <h2>Contenido del curso</h2>
-        <li>
-          <ol>Introducción:</ol>
-          <ol>Unidad 2:</ol>
-          <ol>Unidad 3:</ol>
-          <ol>Unidad 4:</ol>
-        </li>
+        <div class="lista-despegable">
+          <li id="clase1">
+            <ul>
+              <li>Introducción:</li>
+              <li>Historia:</li>
+            </ul>
+          </li>
+          <li id="clase2">
+            <ul>
+              <li>Unidad 1:</li>
+              <li>Unidad 2:</li>
+            </ul>
+          </li>
+          <li id="clase3">
+            <ul>
+              <li>Unidad 3:</li>
+              <li>Unidad 4:</li>
+            </ul>
+          </li>
+          <li id="clase4">
+            <ul>
+              <li>Unidad 5:</li>
+              <li>Unidad 6:</li>
+            </ul>
+          </li>
+        </div>
       </div>
+      <img src="img/javascript.png" alt="foto del curso" class="imagen-detalle-curso">
     </section>
     <h2>Docente</h2>
-    <section class="detelle-docente">
-      <figure>
-        <img src="img/foto-profesor.jpg" alt="Foto de profesor" width="10%">
-      </figure>
+    <section class="detalle-docente">
+      <img src="img/foto-profesor.jpg" alt="Foto de profesor" width="10%">
       <div class="">
-        <h3>Nombre y Apellido</h3>
+        <h3>Tim Berners-Lee</h3>
         <figure>
           <img src="img/calificacion-estrella.png" alt="esteriliitas" width="10%">
         </figure>
@@ -43,78 +76,85 @@
           Soy desarrollador web en una empresa y llevo inmerso en el mundo de la programación y la informática desde los 15 años.
           Me encanta programar y todo lo relacionado con Internet y las nuevas tecnologías, crear cosas y enseñar a los demás.
           Soy casi completamente autodidacta, por eso voy a ofrecerte muchos de mis conocimientos para que tú puedas aprender más fácilmente y más rápido de lo que yo lo hice y hago cada día.
+          Quizas me conoce por mi pequeño proyecto llamado HTML.
         </p>
       </div>
     </section>
     <section>
-        <div class="contenedorCursos">
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso1-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+      <div class="contenedorCursos">
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/java.png" alt="java">
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso2-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/rubi.png" alt="rubi" >
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso3-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/python.png" alt="python">
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-            <article>
-                <div class="contenedorImagen">
-                    <img src="img/curso4-0.jpg" alt="">
-                    <h4 class="precio">$500.-</h4>
-                </div>
-                <div class="infoCursos">
-                   <p>60hs</p>
-                   <p>Nombre del curso</p>
-                </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
+          <article>
+              <div class="contenedorImagen">
+                  <img src="./img/lenguajes/node.png" alt="node">
+                  <p>Curso Java avanzado</p>
+            <div>75hs</div>
                 <p class="textoDerecha">
                     <a href="">Ver Detalle</a>
                 </p>
-                <p class="textoDerecha">
-                    <a href="" class="boton">Comprar</a>
-                </p>
-            </article>
-        </div>
+                <button type="button" name="button">Comprar</button>
+              </div>
+          </article>
     </section>
   </body>
-  <footer>
-  </footer>
+  <footer class="footer">
+      <div>
+        <h3>Datos del grupo</h3>
+        <ul>
+          <li>Sanchez Matias(39.744.903)</li>
+          <li>Faginas Agustin(42.649.660)</li>
+          <li>Marcos Cervera(39.268.060)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#header-id">Inicio</a></li>
+          <li><a href="#cursos-id">Cursos</a></li>
+          <li><a href="#pasos-id">Pasos</a></li>
+          <li><a href="#mediosDePago-id">Medios de pago</a></li>
+        </ul>
+      </div>
+      <div class="social-M">
+        <img src="./img/social-media/043-twitter.png" alt="twitter">
+        <img src="./img/social-media/039-deviantart.png" alt="deviantart">
+        <img src="./img/social-media/029-telegram.png" alt="telegram">
+        <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
+        <img src="./img/social-media/038-github.png" alt="github">
+        <img src="./img/social-media/013-skype.png" alt="skype">
+        <img src="./img/social-media/016-twitch.png" alt="twitch">
+        <img src="./img/social-media/021-facebook.png" alt="facebook">
+      </div>
+    </footer>
 </html>

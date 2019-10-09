@@ -84,8 +84,8 @@
 .contenedorPasos h4{
   padding: 2%;
   font-family: sans-serif;
-    font-size: 25px;
-    font-style: italic;
+  font-size: 25px;
+  font-style: italic;
 }
 .contenedorPasos p{
   margin-left: 10px;
@@ -168,7 +168,8 @@ h2{
     border-radius: 30px;
     bottom: 10px;
     right: 10px;
-    padding: 10px;
+    padding: 8px;
+    
 }
 
 .contenedorImagen{
@@ -187,11 +188,213 @@ h2{
  }
 
  .carrousel{
-    position: relative;
-    overflow: hidden;
-    height: 350px;
+		position: relative;
+		overflow: hidden;
+		height: 350px;
  }
 
+/*------------Formulario Contacto-----------*/
+ .contacto
+ {
+   margin: 10px;
+   display: flex;
+   justify-content: space-around;
+	 font-family: 'Source Sans';
+ }
+
+ .formulario
+ {
+   margin-right: 5em;
+	 background-color: #b2b2b2;
+	 color: #333;
+	 border: 1px solid #121212;;
+	 width: 600px;
+	 weight: 500px;
+	 border-radius: 10px;
+	 padding: 50px;
+	 display: flex;
+	 flex-direction: column;
+ }
+
+ .formulario input
+ {
+	 border-color: #121212;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 10px 20px 10px 25px;
+   margin: 10px 0;
+ }
+
+ .formulario textarea
+ {
+	 border-color: #121212;
+   border-style: solid;
+   border-radius: 5px;
+   padding: 10px 20px 10px 25px;
+   margin: 10px 0;
+ }
+
+ .formulario button
+ {
+   background: white;
+   color: #333;
+	 border-color: #121212;
+   padding: 10px 0px;
+   border-radius: 30px;
+   width: 150px;
+   margin-top: 10px;
+   align-self: center;
+ }
+
+ .contacto-datos
+ {
+	 color: #333;
+   border: 1px solid #121212;
+   background-color: #b2b2b2;
+   width: 600px;
+   height: 500px;
+   border-radius: 10px;
+   padding: 50px;
+	 text-align:justify;
+ }
+
+ .ubicacion
+ {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .ubicacion div, article
+ {
+ align-self:center;
+ }
+
+ .mapa
+ {
+   border: 1px solid #121212;;
+ }
+
+/*------------Detalle Curso-----------*/
+
+.detalle-curso
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagen-detalle-curso
+{
+  margin: 2em;
+	max-width: 25%;
+	height: auto;
+}
+
+.informacion-curso button
+{
+	background: white;
+	color: #333;
+	border: 1px solid #121212;
+	padding: 10px 0px;
+	border-radius: 30px;
+	width: 150px;
+	margin-top: 10px;
+}
+
+.detalle-docente
+{
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  padding: 2em;
+	background-color:#b2b2b2;
+	color: #333;
+}
+
+.detalle-docente img
+{
+	max-width: 100%;
+	height: auto;
+  margin: 1em;
+	border-radius: 50%;
+}
+
+.lista-despegable ul
+{
+	list-style: none;
+}
+
+.lista-despegable ul li
+{
+	margin-bottom: 3%;
+}
+
+.lista-despegable ul li:hover
+{
+	background-color: white;
+}
+
+/*------------Gift Card-----------*/
+
+
+.seccion-gift-card
+{
+  display: flex;
+  justify-content: space-between;
+	font-family: 'Source Sans';
+}
+.contenedorImagens
+{
+	position: relative;
+	margin-right: 1em;
+	margin-top: 2em;
+}
+
+.gift-card-img-personalizacion
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.gift-card-img-personalizacion h3
+{
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	background-color: #2b2b2b;
+}
+
+.contenedorImagens img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.contenedorImagens h4
+{
+  position: absolute;
+  right:0px;
+  bottom: 485px;
+  background-color:#b2b2b2;
+  padding:32px;
+	font-size: 24px;
+	border: 1px solid #121212;
+	color: #333;
+    
+}
+
+.gift-card-opc-personalizacion
+{
+	background-color: #b2b2b2;
+	color: #333;
+	border: 1px solid #121212;
+	border-radius: 10px;
+	padding: 3em;
+	margin: 1em;
+}
 
 .campoInscripcion{
     margin-bottom: 20px;
@@ -270,5 +473,71 @@ h2{
     padding-right: 10px;
 }
 
+.formulario-personalizacion h4, label
+{
+	margin: 1em 0;
+	font-size:20px;
+}
 
+.formulario-personalizacion input
+{
+	border: 1px solid #121212;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 10px 20px 10px 25px;
+	margin: 10px 0;
+}
 
+.formulario-personalizacion button
+{
+	background: white;
+  color: #333;
+  border: 1px solid #121212;
+  padding: 10px 0px;
+  border-radius: 30px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.circulo
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #121212;
+}
+
+#circulo-rojo
+{
+  background-color: red;
+}
+
+#circulo-amarillo
+{
+  background-color: yellow;
+}
+
+#circulo-verde
+{
+  background-color: green;
+}
+
+#circulo-marron
+{
+  background-color: brown;
+}
+
+.divicion-selector
+{
+  display: flex;
+  justify-content:space-around;
+}
+
+.divicion-selector img
+{
+	border: 1px solid #121212;
+}
+.contenedorCampos{
+    display: flex;
+    justify-content: flex-start;
+}
