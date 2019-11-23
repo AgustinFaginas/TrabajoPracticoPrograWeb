@@ -142,11 +142,11 @@ h2{
   margin-top: 1%;
 }
 
-.contenedorCursos{
+/*.contenedorCursos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
+}*/
 
 .contenedorCursos article{
     position: relative;
@@ -172,12 +172,12 @@ h2{
 
 }
 
-.contenedorImagen{
+/*.contenedorImagen{
     position:relative;
 
-}
+}*/
 
-.contenedorImagen img{
+/*.contenedorImagen img{
   max-width: 300px;
   height: 300px;
   display: block;
@@ -185,7 +185,11 @@ h2{
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
- }
+ }*/
+
+ .contenedorImagen img{
+   max-width: 100%;
+  }
 
  .carrousel{
 		position: relative;
@@ -466,7 +470,7 @@ h2{
     height: 50px;
     font-size: 20px;
     margin: 10px;
-    
+
 }
 .eliminar{
     width: 50px;
@@ -569,11 +573,23 @@ h2{
 		justify-content: space-around;
 		margin-bottom: 50px;
  }
+
+
  .formulario
  {
 	 margin-bottom: 10px;
 	 margin-right: 0;
 	 margin-bottom: 30px;
+ }
+ .contenedorCursos
+ {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ }
+ .contenedorImagen
+ {
+	 width: calc(50% - 1em);
  }
 }
 
@@ -608,6 +624,10 @@ h2{
 		margin-right: 0;
 		margin-bottom: 30px;
 	}
+	.contenedorImagen
+  {
+ 	 width: calc(33% - 1em);
+  }
 }
 
 @media screen and (min-width:70em)
@@ -615,7 +635,6 @@ h2{
 	.header
 	{
 		border: 1px solid blue;
-
 	}
 
 	.header ul
@@ -630,4 +649,8 @@ h2{
 	{
 
 	}
+	.contenedorImagen
+  {
+ 	 width: calc(25% - 1em);
+  }
 }
