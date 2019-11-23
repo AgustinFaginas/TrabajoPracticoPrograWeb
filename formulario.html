@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Informacion del curso</title>
-
     <link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="icon" type="image/png" href="img/logo.png">
    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/formulario.js"></script>
   </head>
   <body>
  <header id="header-id" class="header">
@@ -16,7 +17,11 @@
       	<img src="./img/logo.png" alt="logo" id="logo">
       	<label for="buscador"></label>
       	<input type="text" id="buscador" name="buscador" placeholder="Busque aqui" list="lista">
-      	<img src="./img/retail/049-shopping-cart.png" alt="logo" id="carrito">
+      	
+      	  <div id="carrito">
+      	<img src="img/tickets.png" alt="logo" width="50px" >
+      	<p id="total">0</p>
+      	</div>
       </section>
         <div class="nav-menu header">
           <ul>
@@ -39,33 +44,12 @@
             <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required  class="campoInscripcion">
             <label for="dni"></label>
             <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required class="campoInscripcion">
-            <div><img src="img/menos.png" alt="menos" class="menos"></div>
+            <button class="clonar" >+</button>
+             <button class="eliminar">-</button>
             </article>
 
-           <article class="contenedorCampos">
-            <label for="nombre"></label>
-            <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required class="campoInscripcion">
-            <label for="apellido"></label>
-            <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required class="campoInscripcion">
-            <label for="dni"></label>
-            <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required class="campoInscripcion">
-               <div ><img src="img/menos.png" alt="menos" class="menos"></div>
-              </article>
 
-           <article class="contenedorCampos">
-            <label for="nombre"></label>
-            <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required class="campoInscripcion">
-            <label for="apellido"></label>
-            <input type="text" id="apellido-A" name="apellido"  placeholder="Ingrese apellido" required class="campoInscripcion">
-            <label for="dni"></label>
-            <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required class="campoInscripcion" >
-            <div><img src="img/menos.png" alt="menos" class="menos"></div>
-            </article>
-
-        <article class="agregarPersona">
-             <h3 class="agregarPersona">Agregar persona</h3>
-             <div ><img src="img/agregarPersona.png.png" alt="mas" class="mas"></div>
-            </article>
+      
             <article class="botonInscribirseMasPrecio">
         <h4 class="precioInscribirse">$2000</h4>
         <label for="botonInscribirse"></label>
