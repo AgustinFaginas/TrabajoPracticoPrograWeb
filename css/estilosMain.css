@@ -169,7 +169,7 @@ h2{
     bottom: 10px;
     right: 10px;
     padding: 8px;
-    
+
 }
 
 .contenedorImagen{
@@ -209,7 +209,7 @@ h2{
 	 color: #333;
 	 border: 1px solid #121212;;
 	 width: 600px;
-	 weight: 500px;
+	 height: 650px;
 	 border-radius: 10px;
 	 padding: 50px;
 	 display: flex;
@@ -252,7 +252,7 @@ h2{
    border: 1px solid #121212;
    background-color: #b2b2b2;
    width: 600px;
-   height: 500px;
+   height: 650px;
    border-radius: 10px;
    padding: 50px;
 	 text-align:justify;
@@ -260,21 +260,19 @@ h2{
 
  .ubicacion
  {
-   margin-top: 50px;
-   margin-bottom: 50px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
+ 	margin-top: 50px;
+	margin-bottom: 50px;
 
- .ubicacion div, article
- {
- align-self:center;
  }
 
  .mapa
  {
-   border: 1px solid #121212;;
+   border: 1px solid #121212;
+ }
+
+ .mapa iframe
+ {
+	 width: 100%;
  }
 
 /*------------Detalle Curso-----------*/
@@ -383,7 +381,7 @@ h2{
 	font-size: 24px;
 	border: 1px solid #121212;
 	color: #333;
-    
+
 }
 
 .gift-card-opc-personalizacion
@@ -401,7 +399,7 @@ h2{
     margin-right: 80px;
     width: 250px;
     height: 70px;
-    font-size: 20px;    
+    font-size: 20px;
     border-radius: 10px;
     border-color: aqua;
 }
@@ -427,8 +425,8 @@ h2{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
-    
+
+
 }
 .botonInscribirse{
     width: 100px;
@@ -445,7 +443,7 @@ h2{
     padding: 20px;
     padding-right: 30px;
     padding-left: 30px;
-    
+
 }
 .tituloInscripcion{
     font-family: 'Fjalla One', sans-serif;
@@ -540,4 +538,92 @@ h2{
 .contenedorCampos{
     display: flex;
     justify-content: flex-start;
+}
+/*------------Responsive Desing-----------*/
+
+@media screen and (min-width:47em)
+{
+ .header
+ {
+	 border: 1px solid red;
+ }
+
+ .header ul
+ {
+	 display: none;
+ }
+
+ .header input
+ {
+
+ }
+
+ .contacto
+ {
+	 display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 50px;
+ }
+ .formulario
+ {
+	 margin-bottom: 10px;
+	 margin-right: 0;
+	 margin-bottom: 30px;
+ }
+}
+
+@media screen and (min-width:60em)
+{
+	.header
+	{
+		border: 1px solid green;
+	}
+
+	.header ul
+	{
+		display: none;
+	}
+
+	.header input
+	{
+
+	}
+
+	.contacto
+	{
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+		margin-bottom: 50px;
+	}
+
+	.formulario
+	{
+		margin-bottom: auto;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width:70em)
+{
+	.header
+	{
+		border: 1px solid blue;
+
+	}
+
+	.header ul
+	{
+		display: flex;
+	}
+	.section-header
+	{
+
+	}
+	.header input
+	{
+
+	}
 }
