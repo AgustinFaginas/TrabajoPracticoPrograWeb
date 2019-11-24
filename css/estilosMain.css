@@ -182,6 +182,7 @@ h2{
     border-radius: 30px;
     padding: 1em;
 		box-sizing: border-box;
+    color: #b2b2b2;
 }
 
 .contenedorCursos button{
@@ -199,6 +200,12 @@ h2{
 	background-color:#b2b2b2;
 	color:#202020;
 }
+.contenedorImagen a:hover
+{
+  color: #61dafb;
+  text-decoration: underline;
+}
+
  .contenedorImagen img{
    max-width: 100%;
   }
