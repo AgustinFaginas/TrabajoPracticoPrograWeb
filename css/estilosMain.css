@@ -20,11 +20,56 @@ h1, h3, h4, h5, h6{
 .header
 {
    background-color: #2b2b2b;
+   position: relative;
 }
 
-.nav-menu{
-	clear: both;
-	margin-top: 2%;
+.carrito-fig
+{
+  position: relative;
+  width: 5%;
+}
+
+.seccion-header
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header input
+{
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 2px 5px 5px;
+  background-color: #2b2b2b;
+  color: #fff;
+  width: 70%;
+  height: 70%;
+  margin-top:1.2em;
+	border-radius: 150px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#logo
+{
+  width: 10%;
+}
+
+#carrito
+{
+  width: 100%;
+  margin-top: 7px;
+}
+#total
+{
+  position: absolute;
+  top: 0px;
+  right:-5px;
+  background-color: white;
+  border-radius: 30%;;
+  width: 20px;
+  text-align: center;
 }
 
 .nav-menu ul
@@ -57,61 +102,6 @@ h1, h3, h4, h5, h6{
 {
   font-weight: bold;
 }
-
-.header
-{
-  position: relative;
-}
-
-.header input
-{
-  display: block;
-  font-weight: bold;
-  font-size: 15px;
-  color: #fff;
-	box-sizing: border-box;
-  padding: 10px 2px 5px 5px;
-  width: 70%;
-  background-color: #2b2b2b;
-  color: #fff;
-  position: absolute;
-  float: left;
-  top: 20%;
-  left: 17%;
-	border-radius: 150px;
-	border-top-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-}
-
-#logo{
-	float: left;
-	position: relative;
-	left: 15px;
-	width: 10%;
-}
-
-#carrito{
-  display:block;
-	float: right;
-	position: relative;
-	top:20px;
-	right: 50px;
-	width: 4%;
-
-}
-#total{
-  	float: right;
-    position: absolute;
-		top: 0px;
-    left:53px;
-    background-color: white;
-    border-radius: 30%;;
-    width: 20px;
-    text-align: center;
-
-}
-
-
 
 /*------------index-----------*/
 
@@ -213,11 +203,7 @@ h2{
    max-width: 100%;
   }
 
- .carrousel{
-		position: relative;
-		overflow: hidden;
-		height: 350px;
- }
+
 
 /*------------Formulario Contacto-----------*/
  .contacto
