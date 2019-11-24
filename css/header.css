@@ -2,22 +2,24 @@
 	margin: 0;
   padding: 0;
 }
-html{
+html
+{
   padding: 25px;
 }
-body{
-    height: 1000px;
+body
+{
     background-color: #202020;
 }
+
+h1, h3, h4, h5, h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
 
 .header
 {
    background-color: #2b2b2b;
-}
-
-.header header
-{
-    width: 100%;
 }
 
 .nav-menu{
@@ -31,17 +33,22 @@ body{
   justify-content: space-around;
 }
 
+
 .nav-menu li
 {
   padding: 1%;
-  background-color: #2b2b2b;
+}
+
+.nav-menu li:hover
+{
+  color: #b2b2b2;
 }
 
 .nav-menu li a
 {
   text-decoration: none;
   font-family: 'Fjalla One', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 25px;
   color: #fff;
 }
@@ -51,29 +58,25 @@ body{
   font-weight: bold;
 }
 
-header{
+.header
+{
   position: relative;
 }
 
 .header input
-{
-	display: block;
-  text-decoration: none;
-  font-family: sans-serif;
+{	
   font-weight: bold;
   font-size: 15px;
-  padding-left: 10px;
   color: #fff;
 	box-sizing: border-box;
-    padding: 10px 2px 5px 5px;
-    display: block;
-    width: 70%;
-    background-color: #2b2b2b;
-    color: #fff;
-    position: absolute;
-    float: left;
-    top: 20%;
-    left: 17%;
+  padding: 10px 2px 5px 5px;
+  width: 70%;
+  background-color: #2b2b2b;
+  color: #fff;
+  position: absolute;
+  float: left;
+  top: 20%;
+  left: 17%;
 	border-radius: 150px;
 	border-top-right-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -83,33 +86,25 @@ header{
 	float: left;
 	position: relative;
 	left: 15px;
-	top:10px;
-	background-color: #2b2b2b;
 	width: 10%;
 }
 
 #carrito{
 	float: right;
 	position: relative;
-	background-color: #2b2b2b;
-	top:30px;
+	top:20px;
 	right: 50px;
-	width: 3%;
+	width: 4%;
 
 }
 #total{
-  float: right;
+  	float: right;
     position: absolute;
-    top: 10px;
-    left:60px;
+		top: 0px;
+    left:53px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 30%;;
     width: 20px;
     text-align: center;
-    
-}
 
-h1, h3, h4, h5, h6{
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
 }

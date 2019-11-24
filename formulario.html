@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Informacion del curso</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="icon" type="image/png" href="img/logo.png">
    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -12,27 +10,33 @@
     <script src="js/formulario.js"></script>
   </head>
   <body>
- <header id="header-id" class="header">
-     <section>
-      	<img src="./img/logo.png" alt="logo" id="logo">
-      	<label for="buscador"></label>
-      	<input type="text" id="buscador" name="buscador" placeholder="Busque aqui" list="lista">
-      	
-      	  <div id="carrito">
-      	<img src="img/tickets.png" alt="logo" width="50px" >
-      	<p id="total">0</p>
-      	</div>
-      </section>
-        <div class="nav-menu header">
-          <ul>
-          <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#cursos-id">Cursos</a></li>
-            <li><a href="giftCard.html">GiftCard</a></li>
-            <li><a href="formularioContacto.html">Contacto</a></li>
-            <li><a href="formulario.html">Inscripcion</a></li>
-        </ul>
-        </div>
-    </header>
+    <header id="header-id" class="header">
+       <section class="seccion-header">
+          <img src="./img/logo.png" alt="logo" id="logo">
+          <label for="buscador"></label>
+          <input list="browsers" name="browser">
+          <datalist id="browsers">
+            <option value="Cursos">
+            <option value="Contacto">
+            <option value="GiftCard">
+            <option value="Inscripcion">
+          </datalist>
+          <div id="carrito">
+            <img src="./img/retail/049-shopping-cart.png" alt="logo" width="50px" >
+            <p id="total">0</p>
+          </div>
+        </section>
+          <nav class="nav-menu header">
+            <ul class="header">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html#cursos-id">Cursos</a></li>
+              <li><a href="giftCard.html">GiftCard</a></li>
+              <li><a href="formularioContacto.html">Contacto</a></li>
+              <li><a href="formulario.html">Inscripcion</a></li>
+            </ul>
+          </nav>
+          <a class="desplegable"></a>
+      </header>
     <main>
        <h2 class="tituloCurso">Curso desarrollo web</h2>
        <h3 class="tituloInscripcion">Inscripcion</h3>
@@ -49,7 +53,7 @@
             </article>
 
 
-      
+
             <article class="botonInscribirseMasPrecio">
         <h4 class="precioInscribirse">$2000</h4>
         <label for="botonInscribirse"></label>
@@ -57,34 +61,34 @@
         </article>
         </section>
     </main>
-   <footer class="footer">
-      <div>
-        <h3>Datos del grupo</h3>
-        <ul>
-          <li>Sanchez Matias(39.744.903)</li>
-          <li>Faginas Agustin(42.649.660)</li>
-          <li>Marcos Cervera(39.268.060)</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Menu</h3>
-        <ul>
-          <li><a href="#header-id">Inicio</a></li>
-            <li><a href="#cursos-id">Cursos</a></li>
-            <li><a href="giftCard.html">GiftCard</a></li>
-            <li><a href="formularioContacto.html">Contacto</a></li>
-            <li><a href="formulario.html">Inscripcion</a></li>
-        </ul>
-      </div>
-      <div class="social-M">
-        <img src="./img/social-media/043-twitter.png" alt="twitter">
-        <img src="./img/social-media/029-telegram.png" alt="telegram">
-        <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
-        <img src="./img/social-media/038-github.png" alt="github">
-        <img src="./img/social-media/013-skype.png" alt="skype">
-        <img src="./img/social-media/016-twitch.png" alt="twitch">
-        <img src="./img/social-media/021-facebook.png" alt="facebook">
-      </div>
-    </footer>
+    <footer class="footer">
+        <div>
+          <h3>Datos del grupo</h3>
+          <ul>
+            <li>Sanchez Matias(39.744.903)</li>
+            <li>Faginas Agustin(42.649.660)</li>
+            <li>Marcos Cervera(39.268.060)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#header-id">Inicio</a></li>
+              <li><a href="#cursos-id">Cursos</a></li>
+              <li><a href="giftCard.html">GiftCard</a></li>
+              <li><a href="formularioContacto.html">Contacto</a></li>
+              <li><a href="formulario.html">Inscripcion</a></li>
+          </ul>
+        </div>
+        <div class="social-M">
+          <img src="./img/social-media/043-twitter.png" alt="twitter">
+          <img src="./img/social-media/029-telegram.png" alt="telegram">
+          <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
+          <img src="./img/social-media/038-github.png" alt="github">
+          <img src="./img/social-media/013-skype.png" alt="skype">
+          <img src="./img/social-media/016-twitch.png" alt="twitch">
+          <img src="./img/social-media/021-facebook.png" alt="facebook">
+        </div>
+      </footer>
   </body>
 </html>

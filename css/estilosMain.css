@@ -1,3 +1,120 @@
+*{
+	margin: 0;
+  padding: 0;
+}
+html
+{
+  padding: 25px;
+}
+body
+{
+    background-color: #202020;
+}
+
+h1, h3, h4, h5, h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+
+.header
+{
+   background-color: #2b2b2b;
+}
+
+.nav-menu{
+	clear: both;
+	margin-top: 2%;
+}
+
+.nav-menu ul
+{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.nav-menu li
+{
+  padding: 1%;
+}
+
+.nav-menu li:hover
+{
+  color: #b2b2b2;
+}
+
+.nav-menu li a
+{
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #fff;
+}
+
+.nav-menu ul a:hover
+{
+  font-weight: bold;
+}
+
+.header
+{
+  position: relative;
+}
+
+.header input
+{
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+	box-sizing: border-box;
+  padding: 10px 2px 5px 5px;
+  width: 70%;
+  background-color: #2b2b2b;
+  color: #fff;
+  position: absolute;
+  float: left;
+  top: 20%;
+  left: 17%;
+	border-radius: 150px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#logo{
+	float: left;
+	position: relative;
+	left: 15px;
+	width: 10%;
+}
+
+#carrito{
+  display:block;
+	float: right;
+	position: relative;
+	top:20px;
+	right: 50px;
+	width: 4%;
+
+}
+#total{
+  	float: right;
+    position: absolute;
+		top: 0px;
+    left:53px;
+    background-color: white;
+    border-radius: 30%;;
+    width: 20px;
+    text-align: center;
+
+}
+
+
+
+/*------------index-----------*/
+
 .contenedorPasos{
   display: flex;
   flex-wrap: wrap;
@@ -306,6 +423,71 @@ h2{
 	margin: 1em;
 }
 
+.formulario-personalizacion input
+{
+	border: 1px solid #121212;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 10px 20px 10px 25px;
+	margin: 10px 0;
+}
+
+.formulario-personalizacion button
+{
+	background: white;
+  color: #333;
+  border: 1px solid #121212;
+  padding: 10px 0px;
+  border-radius: 30px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.circulo
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #121212;
+}
+
+#circulo-rojo
+{
+  background-color: red;
+}
+
+#circulo-amarillo
+{
+  background-color: yellow;
+}
+
+#circulo-verde
+{
+  background-color: green;
+}
+
+#circulo-marron
+{
+  background-color: brown;
+}
+
+.divicion-selector
+{
+  display: flex;
+  justify-content:space-around;
+}
+
+.divicion-selector img
+{
+	border: 1px solid #121212;
+}
+.contenedorCampos{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*------------Formulario-----------*/
+
 .campoInscripcion{
     margin-bottom: 20px;
     margin-right: 80px;
@@ -393,68 +575,53 @@ h2{
 	font-size:20px;
 }
 
-.formulario-personalizacion input
-{
-	border: 1px solid #121212;
-	border-style: solid;
-	border-radius: 5px;
-	padding: 10px 20px 10px 25px;
-	margin: 10px 0;
+/*------------footer-----------*/
+
+.footer{
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #2A2A2A;
 }
 
-.formulario-personalizacion button
-{
-	background: white;
-  color: #333;
-  border: 1px solid #121212;
-  padding: 10px 0px;
-  border-radius: 30px;
-  width: 150px;
-  margin-top: 10px;
+.footer div{
+	padding: 1%;
+	position: relative;
+	width:calc(30% - 1em);
 }
 
-.circulo
-{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #121212;
+.footer li,a{
+	text-decoration: none;
+	font-family: sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
 }
 
-#circulo-rojo
-{
-  background-color: red;
+.footer li a:hover{
+	text-decoration: underline;
+  font-weight: bold;
+  color:#b2b2b2;
 }
 
-#circulo-amarillo
-{
-  background-color: yellow;
+.footer h3{
+	color: #f5f5f5;
 }
 
-#circulo-verde
-{
-  background-color: green;
+.social-M{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
-#circulo-marron
-{
-  background-color: brown;
+.social-M img{
+	height: 50px;
 }
 
-.divicion-selector
-{
-  display: flex;
-  justify-content:space-around;
-}
 
-.divicion-selector img
-{
-	border: 1px solid #121212;
-}
-.contenedorCampos{
-    display: flex;
-    justify-content: flex-start;
-}
+
 /*------------Responsive Desing-----------*/
 
 @media screen and (min-width:47em)
@@ -469,17 +636,26 @@ h2{
 	 display: none;
  }
 
- .header input
- {
-
- }
-
+ a.desplegable{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/retail/hamburger.png);
+    background-color: #06a8de;
+    position:absolute;
+    top:0;
+    right: 50px;
+    cursor: pointer;
+}
+a.desplegable:hover{
+    background-color:#000;
+}
  .contacto
  {
-	 display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		margin-bottom: 2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 2em;
  }
 
 
@@ -512,10 +688,20 @@ h2{
 		display: none;
 	}
 
-	.header input
-	{
-
-	}
+  a.desplegable{
+     display: block;
+     width: 55px;
+     height: 55px;
+     background-image: url(../img/retail/hamburger.png);
+     background-color: #06a8de;
+     position:absolute;
+     top:0;
+     right: 60px;
+     cursor: pointer;
+ }
+ a.desplegable:hover{
+     background-color:#000;
+ }
 
 	.contenedorImagen
   {
@@ -534,7 +720,10 @@ h2{
 	{
 		display: flex;
 	}
-
+  a.desplegable
+  {
+    display: none;
+  }
 	.contenedorImagen
   {
  	 width: calc(25% - 1em);

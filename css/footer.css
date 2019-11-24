@@ -1,27 +1,22 @@
-footer{
-	margin-top: 2%;
-	background: blue;
-}
-
 .footer{
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background: #2A2A2A;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #2A2A2A;
 }
 
 .footer div{
 	padding: 1%;
 	position: relative;
-	width:calc(30% - 20px);
+	width:calc(30% - 1em);
 }
 
 .footer li,a{
 	text-decoration: none;
 	font-family: sans-serif;
-    font-size: 15px;
-    font-style: italic;
-    color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
 }
 
 .footer h3{

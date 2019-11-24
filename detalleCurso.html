@@ -3,26 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Detalle Curso</title>
-    <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
   </head>
   <header id="header-id" class="header">
-     <section>
+     <section class="seccion-header">
       	<img src="./img/logo.png" alt="logo" id="logo">
       	<label for="buscador"></label>
-      	<input type="text" id="buscador" name="buscador" placeholder="Busque aqui" list="lista">
-      	<img src="./img/retail/049-shopping-cart.png" alt="logo" id="carrito">
+      	<input list="browsers" name="browser">
+      	<datalist id="browsers">
+        	<option value="Cursos">
+        	<option value="Contacto">
+        	<option value="GiftCard">
+    			<option value="Inscripcion">
+  			</datalist>
+      	<div id="carrito">
+      		<img src="./img/retail/049-shopping-cart.png" alt="logo" width="50px" >
+      		<p id="total">0</p>
+      	</div>
       </section>
-        <div class="nav-menu header">
-          <ul>
+        <nav class="nav-menu header">
+          <ul class="header">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="index.html#cursos-id">Cursos</a></li>
             <li><a href="giftCard.html">GiftCard</a></li>
             <li><a href="formularioContacto.html">Contacto</a></li>
             <li><a href="formulario.html">Inscripcion</a></li>
-        </ul>
-        </div>
+          </ul>
+        </nav>
+				<a class="desplegable"></a>
     </header>
   <body>
     <section class="detalle-curso">
@@ -82,52 +90,45 @@
       </div>
     </section>
     <section>
-      <div class="contenedorCursos">
-          <article>
-              <div class="contenedorImagen">
-                  <img src="./img/lenguajes/java.png" alt="java">
-                  <p>Curso Java avanzado</p>
-            <div>75hs</div>
-                <p class="textoDerecha">
-                    <a href="detalleCurso.html">Ver Detalle</a>
-                </p>
-                <button type="button" name="button">Comprar</button>
-              </div>
-          </article>
-          <article>
-              <div class="contenedorImagen">
-                  <img src="./img/lenguajes/rubi.png" alt="rubi" >
-                  <p>Curso Java avanzado</p>
-            <div>75hs</div>
-                <p class="textoDerecha">
-                    <a href="detalleCurso.html">Ver Detalle</a>
-                </p>
-                <button type="button" name="button">Comprar</button>
-              </div>
-          </article>
-          <article>
-              <div class="contenedorImagen">
-                  <img src="./img/lenguajes/python.png" alt="python">
-                  <p>Curso Java avanzado</p>
-            <div>75hs</div>
-                <p class="textoDerecha">
-                    <a href="detalleCurso.html">Ver Detalle</a>
-                </p>
-                <button type="button" name="button">Comprar</button>
-              </div>
-          </article>
-          <article>
-              <div class="contenedorImagen">
-                  <img src="./img/lenguajes/node.png" alt="node">
-                  <p>Curso Java avanzado</p>
-            <div>75hs</div>
-                <p class="textoDerecha">
-                    <a href="detalleCurso.html">Ver Detalle</a>
-                </p>
-                <button type="button" name="button">Comprar</button>
-              </div>
-          </article>
-    </section>
+        <h2 id="cursos-id">Cursos Destacados</h2>
+        <div class="contenedorCursos">
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/java.png" alt="java">
+                    <p>Curso Java avanzado</p>
+                    <div>45hs</div>
+                    <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                    </p>
+                  <button type="button" name="button"  onclick="incrementar()">Comprar</button>
+            </article>
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/rubi.png" alt="rubi" >
+                    <p>Curso Rubi</p>
+                    <div>75hs</div>
+                    <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                    </p>
+                  <button type="button" name="button">Comprar</button>
+            </article>
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/python.png" alt="python">
+                    <p>Curso Python de 0 a Ninja</p>
+                    <div>255hs</div>
+                    <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                    </p>
+                  <button type="button" name="button">Comprar</button>
+            </article>
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/node.png" alt="node">
+                    <p>Curso Node principiantes</p>
+                <div>85hs</div>
+                  <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                  </p>
+                  <button type="button" name="button">Comprar</button>
+            </article>
+          </section>
   </body>
   <footer class="footer">
       <div>
