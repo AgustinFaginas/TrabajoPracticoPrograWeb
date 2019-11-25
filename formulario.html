@@ -7,11 +7,14 @@
    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js">
+      </script>
     <script src="js/formulario.js"></script>
     <script src="js/funciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
-  <body>
+  <body> 
     <header id="header-id" class="header">
        <section class="seccion-header">
         	<img src="./img/logo.png" alt="logo" id="logo">
@@ -29,6 +32,10 @@
             <a class="desplegable"></a>
   				</article>
         </section>
+         <div id="ex1" class="modal">
+  <p>Felicitaciones se inscribio correctamente.</p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
           <nav class="nav-menu">
             <ul class="header">
               <li><a href="index.html">Inicio</a></li>
@@ -40,7 +47,7 @@
           </nav>				
       </header>
     <main>
-       <h2 class="tituloCurso">Curso desarrollo web</h1>
+       <h2 class="tituloCurso">Curso desarrollo web</h2>
        <h2 class="tituloInscripcion">Inscripcion</h2>
         <section class="inscripcion">
             <article class="contenedorCampos">
@@ -59,8 +66,7 @@
             </article>
             <article class="botonInscribirseMasPrecio">
         <h4 class="precioInscribirse">$2000</h4>
-        <label for="botonInscribirse"></label>
-         <button type="button" name="boton" class="botonInscribirse">Inscribirse</button>
+       <p><a href="#ex1" rel="modal:open" class="botonInscribirse">Inscribirse</a></p>
         </article>
         </section>
     </main>

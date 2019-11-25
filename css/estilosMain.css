@@ -591,14 +591,18 @@ h2{
 }
 
 .botonInscribirse{
-    width: 100px;
-    height: 50px;
-    background-color:yellow;
-    color: black;
-    border-radius: 5px;
-    margin-left: 0.8em;
-		border-color: #000;
-		cursor: pointer;
+   
+	background-color: white;
+	color: #000;
+	border: 1px solid #121212;
+	width: 150px;
+	cursor: pointer;
+	margin: 1em;
+	display: block;
+	text-align: center;
+	position: relative;
+	border-radius: 1em;
+	padding: 0.6em;
 }
 
 .botonInscribirse:hover
