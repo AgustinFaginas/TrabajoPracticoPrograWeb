@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/funciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
   <header id="header-id" class="header">
      <section class="seccion-header">
@@ -37,43 +39,37 @@
 				<a class="desplegable"></a>
     </header>
   <body>
+   <div id="ex1" class="modal">
+  <p>Te inscribiste al curso de javaScript:<br>
+  .Valor: 2500$<br>
+.Tiempo de dedicación: 8hs semanales<br>
+.Descripción del curso: Avanzado<br>
+.Requisitos previos: Saber las bases de programación
+  </p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
     <section class="detalle-curso">
       <div class="informacion-curso">
-        <h2>Curso avanzado javascript</h2>
+        <h2 >Curso avanzado javascript</h2>
         <li class="">
-          <ol>Valor: 2500$</ol>
-          <ol>Tiempo de dedicación: 8hs semanales</ol>
-          <ol>Descripción del curso: Avanzado</ol>
-          <ol>Requisitos previos: Saber las bases de programación</ol>
+          <ol>.Valor: 2500$</ol>
+          <ol>.Tiempo de dedicación: 8hs semanales</ol>
+          <ol>.Descripción del curso: Avanzado</ol>
+          <ol>.Requisitos previos: Saber las bases de programación</ol>
         </li>
-        <button type="button" name="button">Inscribirse</button>
-        <h2>Contenido del curso</h2>
-        <div class="lista-despegable">
-          <li id="clase1">
-            <ul>
-              <li>Introducción:</li>
-              <li>Historia:</li>
-            </ul>
-          </li>
-          <li id="clase2">
-            <ul>
-              <li>Unidad 1:</li>
-              <li>Unidad 2:</li>
-            </ul>
-          </li>
-          <li id="clase3">
-            <ul>
-              <li>Unidad 3:</li>
-              <li>Unidad 4:</li>
-            </ul>
-          </li>
-          <li id="clase4">
-            <ul>
-              <li>Unidad 5:</li>
-              <li>Unidad 6:</li>
-            </ul>
-          </li>
-        </div>
+    
+        <a href="#ex1" rel="modal:open">Inscribirse</a>
+        <h2>Contenido</h2>
+        	<div class="faq">
+		<div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 1</div>
+		<div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ut eligendi nisi cum obcaecati beatae.</div>
+		<div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 2</div>
+		<div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corrupti aspernatur necessitatibus veniam, animi dolor!</div>
+		<div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 3</div>
+		<div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est praesentium ipsa enim, culpa facilis sunt!</div>
+		<div class="title-tab"><i class="fa fa-1x"></i>Pregunta frecuente 4</div>
+		<div class="content-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aspernatur, explicabo dolores, beatae tenetur sunt.</div>
+	</div>
       </div>
       <img src="img/javascript.png" alt="foto del curso" class="imagen-detalle-curso">
     </section>

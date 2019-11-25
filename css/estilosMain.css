@@ -314,6 +314,17 @@ h2{
  }
 
 /*------------Detalle Curso-----------*/
+.informacion-curso h2{
+    height: 5%;
+    
+}
+.informacion-curso ol{
+    color:#2b2b2b;
+    font-size: 1.5em;
+    background-color: #b2b2b2;
+    padding: 0.4em;
+    margin: 0.4em;
+}
 
 .detalle-curso
 {
@@ -328,15 +339,15 @@ h2{
 	height: auto;
 }
 
-.informacion-curso button
+.informacion-curso a
 {
 	background: white;
 	color: #333;
 	border: 1px solid #121212;
-	padding: 10px 0px;
+	padding: 0.4em;
 	border-radius: 30px;
 	width: 150px;
-	margin-top: 10px;
+	
 }
 
 .detalle-docente
@@ -357,21 +368,27 @@ h2{
   margin: 1em;
 	border-radius: 50%;
 }
+.faq{
+		width:500px;
+		border:1px solid #000000;
+	}
+	.title-tab{
+		padding:16px 8px;
+		background-color:#b2b2b2;
+		color:#000000;
+		border:1px solid  #000000;
+	}
 
-.lista-despegable ul
-{
-	list-style: none;
-}
+	.title-tab i{
+		margin:8px;
+	}
 
-.lista-despegable ul li
-{
-	margin-bottom: 3%;
-}
+	.content-tab{
+		padding:32px 8px;
+        color: white;
+	}
 
-.lista-despegable ul li:hover
-{
-	background-color: white;
-}
+
 
 /*------------Gift Card-----------*/
 
@@ -779,3 +796,5 @@ h2{
   }
 
 }
+
+	
