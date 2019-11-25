@@ -16,6 +16,10 @@ h1, h3, h4, h5, h6{
   font-weight: normal;
 }
 
+li, ol
+{
+ list-style-type: none;
+}
 
 .header
 {
@@ -316,7 +320,6 @@ h2{
 /*------------Detalle Curso-----------*/
 .informacion-curso h2{
     height: 5%;
-    
 }
 .informacion-curso ol{
     color:#2b2b2b;
@@ -329,17 +332,28 @@ h2{
 .detalle-curso
 {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .imagen-detalle-curso
 {
-  margin: 2em;
-	max-width: 25%;
-	height: auto;
+	width: 100%;
+	border: 1px solid #121212;
+	margin-top: 0.6em;
 }
 
-.informacion-curso a
+.div-imagen-detalle-curso
+{
+	width: 25%;
+}
+
+.informacion-curso
+{
+	width: 70%;
+}
+
+
+.div-boton-inscribirse a
 {
 	background: white;
 	color: #333;
@@ -347,13 +361,17 @@ h2{
 	padding: 0.4em;
 	border-radius: 30px;
 	width: 150px;
-	
+	cursor: pointer;
+	margin: 1em;
+	display: block;
+	text-align: center;
+	position: relative;
 }
 
 .detalle-docente
 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   border: 1px solid #121212;
   border-radius: 5px;
   padding: 2em;
@@ -363,14 +381,29 @@ h2{
 
 .detalle-docente img
 {
-	max-width: 100%;
-	height: auto;
-  margin: 1em;
+	width: 100%;
 	border-radius: 50%;
 }
+
+.div-imagen-detalle-docente1
+{
+	width: 10%;
+}
+
+.div-imagen-detalle-docente2
+{
+	width:calc(90% - 1em);
+}
+
+.div-imagen-estrellitas
+{
+	width: 10%;
+}
+
 .faq{
-		width:500px;
+		width:100%;
 		border:1px solid #000000;
+		margin-bottom: 0.5em;
 	}
 	.title-tab{
 		padding:16px 8px;
@@ -380,12 +413,12 @@ h2{
 	}
 
 	.title-tab i{
-		margin:8px;
+		margin:0.8em;
 	}
 
 	.content-tab{
-		padding:32px 8px;
-        color: white;
+		padding:2em 0.8em;
+    color: white;
 	}
 
 
@@ -712,6 +745,8 @@ h2{
  {
 	 width: calc(50% - 1em);
  }
+
+
 }
 
 @media screen and (min-width:60em)
@@ -796,5 +831,3 @@ h2{
   }
 
 }
-
-	
