@@ -42,7 +42,6 @@ h1, h3, h4, h5, h6{
   color: #fff;
   padding: 10px 2px 5px 5px;
   background-color: #2b2b2b;
-  color: #fff;
   width: 70%;
   height: 70%;
   margin-top:1.2em;
@@ -103,8 +102,25 @@ h1, h3, h4, h5, h6{
   font-weight: bold;
 }
 
-/*------------index-----------*/
+a.desplegable{
+	 display: none;
+	 width: 5%;
+	 height: 100%;
+	 background-image: url(../img/retail/hamburger.gif);
+	 background-color: #2b2b2b;
+	 position:absolute;
+	 top:-1px;
+	 right: 8.5%;
+	 cursor: pointer;
+	 border: 1px solid #b2b2b2;
+	 border-radius: 15%;
+}
 
+/*------------index-----------*/
+.contenedor
+{
+	margin-top: 0.3em;
+}
 .contenedorPasos{
   display: flex;
   flex-wrap: wrap;
@@ -629,20 +645,32 @@ h2{
 	 display: none;
  }
 
- a.desplegable{
+ a.desplegable
+ {
     display: block;
-    width: 50px;
-    height: 50px;
-    background-image: url(../img/retail/hamburger.png);
-    background-color: #06a8de;
-    position:absolute;
-    top:0;
-    right: 50px;
-    cursor: pointer;
-}
-a.desplegable:hover{
+	}
+
+	a.desplegable:hover{
     background-color:#000;
-}
+	}
+
+	.header input
+	{
+	width: 55%;
+	margin-top:0.6em;
+	}
+
+	.carrito-fig
+	{
+		width: 4%;
+	}
+
+	#total
+	{
+ 		top: 1px;
+ 		width: 14px;
+ 		height: 14px;
+	}
  .contacto
  {
 	display: flex;
@@ -681,21 +709,32 @@ a.desplegable:hover{
 		display: none;
 	}
 
-  a.desplegable{
+  a.desplegable
+	{
      display: block;
-     width: 55px;
-     height: 55px;
-     background-image: url(../img/retail/hamburger.png);
-     background-color: #06a8de;
-     position:absolute;
-     top:0;
-     right: 60px;
-     cursor: pointer;
- }
+		 right: 8%;
+ 	}
  a.desplegable:hover{
      background-color:#000;
  }
 
+ .header input
+ {
+   width: 60%;
+   margin-top:0.8em;
+ }
+
+ .carrito-fig
+ {
+   width: 4%;
+ }
+
+ #total
+ {
+ 	top: 1px;
+ 	width: 16px;
+	height: 16px;
+ }
 	.contenedorImagen
   {
  	 width: calc(33% - 1em);
@@ -713,6 +752,23 @@ a.desplegable:hover{
 	{
 		display: flex;
 	}
+
+	.carrito-fig
+	{
+	  width: 4%;
+	}
+
+	#carrito
+	{
+	  margin-top: 1em;
+	}
+	#total
+	{
+	  top: 8px;
+	  width: 20px;
+		height: 15px;
+	}
+
   a.desplegable
   {
     display: none;
