@@ -26,6 +26,7 @@
   				<article class = "carrito-fig">
   					<img src="./img/tickets.png" alt="logo" id= "carrito" >
   	      	<p id="total">0</p>
+            <a class="desplegable"></a>
   				</article>
         </section>
           <nav class="nav-menu">
@@ -36,26 +37,26 @@
               <li><a href="formularioContacto.html">Contacto</a></li>
               <li><a href="formulario.html">Inscripcion</a></li>
             </ul>
-          </nav>
-  				<a class="desplegable"></a>
+          </nav>				
       </header>
     <main>
-       <h2 class="tituloCurso">Curso desarrollo web</h2>
-       <h3 class="tituloInscripcion">Inscripcion</h3>
+       <h2 class="tituloCurso">Curso desarrollo web</h1>
+       <h2 class="tituloInscripcion">Inscripcion</h2>
         <section class="inscripcion">
             <article class="contenedorCampos">
-            <label for="nombre"></label>
-            <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required class="campoInscripcion" >
-            <label for="apellido"></label>
-            <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required  class="campoInscripcion">
-            <label for="dni"></label>
-            <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required class="campoInscripcion">
-            <button class="clonar" >+</button>
-             <button class="eliminar">-</button>
+              <div class="div-campos">
+                <label for="nombre"></label>
+                <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required class="campoInscripcion" >
+                <label for="apellido"></label>
+                <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required  class="campoInscripcion">
+                <label for="dni"></label>
+                <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required class="campoInscripcion">
+              </div>
+              <div class="div-clonar-eliminar">
+                <button class="clonar" >+</button>
+                 <button class="eliminar">-</button>
+              </div>
             </article>
-
-
-
             <article class="botonInscribirseMasPrecio">
         <h4 class="precioInscribirse">$2000</h4>
         <label for="botonInscribirse"></label>
