@@ -249,18 +249,32 @@ h2{
 	 width: 600px;
 	 height: 650px;
 	 border-radius: 10px;
-	 padding: 3.2em;
+	 padding: 3.1em;
 	 display: flex;
 	 flex-direction: column;
+	 position: relative;
  }
+
+#error{
+    color: crimson;
+		position: absolute;
+		right:8%;
+		top:8%;
+
+}
 
  .formularioContacto input
  {
 	 border-color: #121212;
    border-style: solid;
    border-radius: 5px;
-   padding: 10px 20px 10px 25px;
-   margin: 10px 0;
+   padding: 0.8em 1.2em 0.8em 1.8em;
+   margin: 0.8em 0;
+ }
+
+ input.error
+ {
+    border:1px solid crimson;
  }
 
  .formularioContacto textarea
@@ -303,8 +317,7 @@ h2{
 
  .ubicacion
  {
- 	margin-top: 50px;
-	margin-bottom: 50px;
+ 	margin-top: 6em 0;
 
  }
 

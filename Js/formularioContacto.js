@@ -3,20 +3,23 @@ function validar()
   var error = 0;
   var mensajeError = "";
   var regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
-  var regexNumero =/^[0-9]+$/;
+  var regexNumero =/^[0-9-()+]{3,20}/;
 
   $(".mensaje").empty();
+  reset();
 
   if($("#nombreApellido").val()=="")
   {
     error++;
-    mensajeError += "<p>Debe completar su nombre y apellido</p>";
+    mensajeError += "<p>*Debe completar su nombre y apellido</p>";
+    $("#nombreApellido").addClass("error");
   }
 
   if(!($("#email").val().match(regexEmail)))
   {
     error++;
-    mensajeError += "<p>Debe ser un email valido</p>";
+    mensajeError += "<p>*Debe ser un email valido</p>";
+    $("#email").addClass("error");
   }
 
   if($("#tel").val()=="")
@@ -29,7 +32,8 @@ function validar()
     if(!(telefono.match(regexNumero)))
     {
       error++;
-      mensajeError += "<p>Debe ser un telefono valido</p>"
+      mensajeError += "<p>*Debe ser un telefono valido</p>"
+      $("#tel").addClass("error");
     }
   }
 
@@ -42,6 +46,13 @@ function validar()
   {
     return true;
   }
+}
+
+function reset()
+{
+  $("#nombreApellido").removeClass("error");
+  $("#email").removeClass("error");
+  $("#tel").removeClass("error");
 }
 
 $(document).ready(function()
@@ -59,3 +70,25 @@ $(document).ready(function()
   });
 
 });
+/*function validar()
+{
+  var error = 0;
+  var mensajeError = "";
+  var regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
+
+  if(!regexEmail.test(document.getElementById("email").value))
+  {
+    error++;
+    mensajeError += "<p>email erroneo</p>";
+  }
+  if(error == 0)
+  {
+    return true;
+  }
+  else
+  {
+    document.getElementById("error").innerHTML = mensajeError;
+    return false;
+  }
+}
+*/
