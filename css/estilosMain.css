@@ -240,7 +240,7 @@ h2{
 	 box-sizing: border-box;
  }
 
- .formulario
+ .formularioContacto
  {
    margin-right: 5em;
 	 background-color: #b2b2b2;
@@ -254,7 +254,7 @@ h2{
 	 flex-direction: column;
  }
 
- .formulario input
+ .formularioContacto input
  {
 	 border-color: #121212;
    border-style: solid;
@@ -263,7 +263,7 @@ h2{
    margin: 10px 0;
  }
 
- .formulario textarea
+ .formularioContacto textarea
  {
 	 border-color: #121212;
    border-style: solid;
@@ -272,7 +272,7 @@ h2{
    margin: 10px 0;
  }
 
- .formulario button
+ .botonEnviarFormulario
  {
    background: white;
    color: #333;
@@ -284,7 +284,7 @@ h2{
    align-self: center;
 	 cursor: pointer;
  }
- .formulario button:hover
+ .botonEnviarFormulario:hover
  {
 	 background-color:#b2b2b2;
  	color:#202020;
@@ -591,7 +591,7 @@ h2{
 }
 
 .botonInscribirse{
-   
+
 	background-color: white;
 	color: #000;
 	border: 1px solid #121212;
@@ -742,7 +742,7 @@ h2{
  }
 
 
- .formulario
+ .formularioContacto
  {
 	 margin-bottom: 0.8em;
 	 margin-right: 0;
@@ -776,7 +776,7 @@ h2{
 	{
 		border: 1px solid green;
 	}
-	
+
 	.header ul
 	{
 		display: none;
