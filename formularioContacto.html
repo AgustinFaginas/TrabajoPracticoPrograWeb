@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="js/funciones.js"></script>
+    <script src ="js/formularioContacto.js"></script>
   </head>
   <body>
     <header id="header-id" class="header">
@@ -41,16 +42,20 @@
     <h2>Contacto</h2>
     <section id="contacto-id" class="contacto">
       <article class="contactos">
-        <form class="formulario" action="/action_page.php" method="get">
+        <form class="formularioContacto" id="formularioContacto"  name="formularioContacto" action="#"><!--onsubmit="return validar()"-->
           <label for="nombreApellido">Nombre y Apellido:</label>
-          <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Escribir nombre y apellido" required><br>
-          <label for="email">Mail:</label>
-          <input type="email" name="email" id="email" placeholder="Escribir mail" required><br>
+          <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Escribir nombre y apellido"><br>
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" placeholder="Escribir mail" ><br>
           <label for="telefono">Teléfono(opcional):</label>
-          <input type="tel" nombre="tel" id="telefono" placeholder="Escribir teléfono"><br>
+          <input type="text" nombre="tel" id="tel" placeholder="Escribir teléfono"><br>
           <label for="consulta">Consulta:</label>
-          <textarea name="consulta" id="consulta" rows="8" cols="50"  maxlength="320" required></textarea><br>
-          <button type="button" name="button">Enviar</button>
+          <textarea name="consulta" id="consulta" rows="8" cols="50"  maxlength="1000"></textarea><br>
+          <span id="rchars">1000</span><br>
+          <input type="submit" class="botonEnviarFormulario" value="Enviar">
+          <div class="mensaje" id="error">
+
+          </div>
         </form>
       </article>
       <article class="contactos">
