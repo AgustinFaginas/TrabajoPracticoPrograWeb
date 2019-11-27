@@ -15,6 +15,10 @@ $(document).ready(function(){
         precio=precio-2000;
         $(".precioInscribirse").text(precio);
         $(this).parents(".contenedorCampos").remove();
+       }else if($(".contenedorCampos").children().length == 2){
+        $("#nombre-A").val("");
+        $("#apellido-A").val("");
+        $("#dni-a").val("");
        }
     	
     });
