@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$("#giftcard").css("background-image","url(img/fondo1.jpg)");
+	$("#nombre_destinatario").css("color","white");
+	$("#nombre_destinatario").css("font-size","48px");
 	$("#abajo-derecha").click(function() {
 	    if($(this).is(':checked')) {
 	        $("#giftCard_precio").css({
