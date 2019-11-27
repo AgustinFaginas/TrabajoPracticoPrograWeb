@@ -481,17 +481,43 @@ h2{
 	height: auto;
 }
 
+#giftcard{
+	display: block;
+    background-color: white;	
+    border-radius: 30px;
+    width: 50em;
+    height: 30em;
+}
+
 .contenedorImagens h4
 {
   position: absolute;
-  right:0px;
+  right:5px;
+  top:50px;
   bottom: 485px;
   background-color:#b2b2b2;
   padding:32px;
+  padding-top: 10px;
 	font-size: 24px;
 	border: 1px solid #121212;
 	color: #333;
 
+}
+
+.contenedorImagens h1
+{
+position: absolute;
+    display: block;
+    text-align: center;
+    top: 45%;
+    left: 5%;
+    font-size: 20px;
+	color: #333;
+}
+
+#giftCard_precio{
+	top: 15%;
+	right: 4%;
 }
 
 .gift-card-opc-personalizacion
@@ -704,7 +730,6 @@ h2{
 	height: 50px;
 	cursor: pointer;
 }
-
 
 /*------------Responsive Desing-----------*/
 

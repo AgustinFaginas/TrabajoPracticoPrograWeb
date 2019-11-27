@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/giftCard.js"></script>
     <script src="js/funciones.js"></script>
   </head>
   <header id="header-id" class="header">
@@ -42,8 +43,9 @@
       <article class="gift-card-img-personalizacion">
         <h3>Vista previa</h3>
         <div class="contenedorImagens">
-          <img src="img\giftcard1.png" alt="Imagen gift card">
-          <h4>1500$</h4>
+          <div id="giftcard"/>
+          <h4 id="giftCard_precio">$0</h4>
+          <h1 id="nombre_destinatario"> preview </h1>
         </div>
       </article>
       <article class="gift-card-opc-personalizacion">
@@ -92,9 +94,9 @@
               <img src="img\arribaIzquierda.jpg" alt="arriba izquierda"  border=1px>
             </div>
             <div class="divicion-selector">
-              <input type="radio" name="selector-ubicacion" value="abajo-derecha">
-              <input type="radio" name="selector-ubicacion" value="arriba-derecha">
-              <input type="radio" name="selector-ubicacion" value="arriba-izquierda">
+              <input type="radio" id="abajo-derecha" value="abajo-derecha">
+              <input type="radio" id="arriba-derecha" value="arriba-derecha">
+              <input type="radio" id="arriba-izquierda" value="arriba-izquierda">
             </div>
           </div>
           <h4>Fondo:</h4>
