@@ -452,7 +452,9 @@ h2{
 {
   display: flex;
   justify-content: space-between;
+	flex-wrap: wrap;
 	font-family: 'Source Sans';
+
 }
 .contenedorImagens
 {
@@ -463,8 +465,7 @@ h2{
 
 .gift-card-img-personalizacion
 {
-	display: flex;
-	flex-direction: column;
+	width: 50%;
 }
 
 .gift-card-img-personalizacion h3
@@ -475,18 +476,15 @@ h2{
 	background-color: #2b2b2b;
 }
 
-.contenedorImagens img
+#giftcard img
 {
-	max-width: 100%;
-	height: auto;
+	width: 100%;
+	border-radius: 8%;
 }
 
-#giftcard{
-	display: block;
-    background-color: white;	
-    border-radius: 30px;
-    width: 50em;
-    height: 30em;
+#giftcard
+{
+
 }
 
 .contenedorImagens h4
@@ -516,6 +514,7 @@ position: absolute;
 }
 
 #giftCard_precio{
+	position: absolute;
 	top: 15%;
 	right: 4%;
 }
@@ -528,6 +527,7 @@ position: absolute;
 	border-radius: 10px;
 	padding: 3em;
 	margin: 1em;
+	width: 30%;
 }
 
 .formulario-personalizacion input
@@ -735,11 +735,6 @@ position: absolute;
 
 @media screen and (min-width:47em)
 {
- .header
- {
-	 border: 1px solid red;
- }
-
  .header ul
  {
 	 display: none;
@@ -806,14 +801,20 @@ position: absolute;
  {
 		 margin: 2em;
  }
+
+ .gift-card-img-personalizacion
+ {
+	 width: 100%;
+ }
+
+ .gift-card-opc-personalizacion
+ {
+	 width: 100%;
+ }
 }
 
 @media screen and (min-width:60em)
 {
-	.header
-	{
-		border: 1px solid green;
-	}
 
 	.header ul
 	{
@@ -862,15 +863,20 @@ position: absolute;
 			margin: 2em;
 	}
 
+	.gift-card-img-personalizacion
+	{
+		width: 55%;
+	}
+
+	.gift-card-opc-personalizacion
+	{
+		width: 30%;
+	}
+
 }
 
 @media screen and (min-width:70em)
 {
-	.header
-	{
-		border: 1px solid blue;
-	}
-
 	.header ul
 	{
 		display: flex;
@@ -911,5 +917,14 @@ position: absolute;
 	.contenedorCampos
 	{
 	    margin: 2em;
+	}
+	.gift-card-img-personalizacion
+	{
+		width: 55%;
+	}
+
+	.gift-card-opc-personalizacion
+	{
+		width: 30%;
 	}
 }

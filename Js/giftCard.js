@@ -38,15 +38,15 @@ $(document).ready(function(){
 	$("input[name=selector-fondo]").change(function(event) {
 		/* Act on the event */
 		if($(this).val() == "fondo1"){
-			$("#giftcard").css("background-image","url(img/fondo1.jpg)");
+			$("#giftcard img").attr("src", "img/azul.png");
 		}else if ($(this).val() == "fondo2") {
-			$("#giftcard").css("background-image","url(img/fondo2.jpg)");
+			$("#giftcard img").attr("src", "img/violeta.png");
 		}else if ($(this).val() == "fondo3") {
-			$("#giftcard").css("background-image","url(img/fondo3.jpg)");
+			$("#giftcard img").attr("src", "img/lila.png");
 		}else if ($(this).val() == "fondo4") {
-			$("#giftcard").css("background-image","url(img/fondo4.jpg)");
+			$("#giftcard img").attr("src", "img/blancovioleta.png");
 		}else if ($(this).val() == "fondo5") {
-			$("#giftcard").css("background-image","url(img/fondo5.jpg)");
+			$("#giftcard img").attr("src", "img/flashero.png");
 		}
 	});
 
