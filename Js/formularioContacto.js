@@ -3,7 +3,7 @@ function validar()
   var error = 0;
   var mensajeError = "";
   var regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
-  var regexNumero =/^[0-9-()+]{3,20}/;
+  var regexNumero =/^[0-9]{0,4}-[0-9]{0,4}/;
 
   $(".mensaje").empty();
   reset();
