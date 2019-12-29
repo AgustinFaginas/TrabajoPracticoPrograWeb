@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gift Card</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/giftCard.js"></script>
+    <script src="js/funciones.js"></script>
+  </head>
+  <header id="header-id" class="header">
+     <section class="seccion-header">
+      	<img src="./img/logo.png" alt="logo" id="logo">
+      	<label for="buscador"></label>
+      	<input list="browsers" name="browser">
+      	<datalist id="browsers">
+        	<option value="Cursos">
+        	<option value="Contacto">
+        	<option value="GiftCard">
+    			<option value="Inscripcion">
+  			</datalist>
+				<article class = "carrito-fig">
+					<img src="./img/tickets.png" alt="logo" id= "carrito" >
+	      	<p id="total">0</p>
+				</article>
+      </section>
+        <nav class="nav-menu">
+          <ul class="header">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fullcalendar-4.3.1/examples/month-view.html">Calendario</a></li>
+            <li><a href="giftCard.html">GiftCard</a></li>
+            <li><a href="formularioContacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Inscripcion</a></li>
+          </ul>
+        </nav>
+				<a class="desplegable"></a>
+    </header>
+  <body>
+    <h2>Personalización de Gift Card</h2>
+    <section class="seccion-gift-card">
+      <article class="gift-card-img-personalizacion">
+        <h3>Vista previa</h3>
+        <div class="contenedorImagens">
+          <div id="giftcard">
+          <img src="img\blanco.png" alt="imagenBlanca">
+          <h4 id="giftCard_precio">$0</h4>
+          <h1 id="nombre_destinatario"> preview </h1>
+        </div>
+        </div>
+      </article>
+      <article class="gift-card-opc-personalizacion">
+        <form class="formulario-personalizacion">
+          <label for="nombreDestinatario">Nombre Destinatario:</label>
+          <input type="text" name="nombreDestinatario" id="nombreDestinatario" placeholder="Nombre Destinatario" required>
+          <h4>Color:</h4>
+          <div>
+            <div class="divicion-selector">
+              <article class="circulo" id="circulo-rojo"></article>
+              <article class="circulo" id="circulo-amarillo"></article>
+              <article class="circulo" id="circulo-verde"></article>
+              <article class="circulo" id="circulo-marron"></article>
+            </div>
+            <div class="divicion-selector">
+              <input type="radio" name="selector-color" value="rojo">
+              <input type="radio" name="selector-color" value="amarillo">
+              <input type="radio" name="selector-color" value="verde">
+              <input type="radio" name="selector-color" value="marron">
+            </div>
+          </div>
+          <h4>Tamaño fuente:</h4>
+          <div>
+            <div class="divicion-selector">
+              <p>20px</p>
+              <p>28px</p>
+              <p>32px</p>
+              <p>48px</p>
+              <p>60px</p>
+            </div>
+            <div class="divicion-selector">
+              <input type="radio" name="selector-pixel" value="20">
+              <input type="radio" name="selector-pixel" value="28">
+              <input type="radio" name="selector-pixel" value="32">
+              <input type="radio" name="selector-pixel" value="48">
+              <input type="radio" name="selector-pixel" value="60">
+            </div>
+          </div>
+          <label for="monto">Monto $:</label>
+          <input type="number"  name="monto" id="monto" placeholder="$$$">
+          <h4>Ubicación:</h4>
+          <div>
+            <div class="divicion-selector">
+              <img src="img\abajoDerecha.jpg" alt="abajo derecha" border=1px>
+              <img src="img\arribaDerecha.jpg" alt="arriba derecha"  border=1px>
+              <img src="img\arribaIzquierda.jpg" alt="arriba izquierda"  border=1px>
+            </div>
+            <div class="divicion-selector">
+              <input type="radio" id="abajo-derecha" value="abajo-derecha" name="division-selector">
+              <input type="radio" id="arriba-derecha" value="arriba-derecha" name="division-selector">
+              <input type="radio" id="arriba-izquierda" value="arriba-izquierda" name="division-selector">
+            </div>
+          </div>
+          <h4>Fondo:</h4>
+          <div>
+            <div class="divicion-selector">
+              <img src="img\fondo1.jpg" alt="fondo1">
+              <img src="img\fondo2.jpg" alt="fondo2">
+              <img src="img\fondo3.jpg" alt="fondo3">
+              <img src="img\fondo4.jpg" alt="fondo4">
+              <img src="img\fondo5.jpg" alt="fondo5">
+            </div>
+            <div class="divicion-selector">
+              <input type="radio" name="selector-fondo" value="fondo1">
+              <input type="radio" name="selector-fondo" value="fondo2">
+              <input type="radio" name="selector-fondo" value="fondo3">
+              <input type="radio" name="selector-fondo" value="fondo4">
+              <input type="radio" name="selector-fondo" value="fondo5">
+            </div>
+          </div>
+          <button type="button" name="button">Confirmar</button>
+        </form>
+      </article>
+    </section>
+  </body>
+  <footer class="footer">
+      <div>
+        <h3>Datos del grupo</h3>
+        <ul>
+          <li>Sanchez Matias(39.744.903)</li>
+          <li>Faginas Agustin(42.649.660)</li>
+          <li>Marcos Cervera(39.268.060)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#cursos-id">Cursos</a></li>
+            <li><a href="giftCard.html">GiftCard</a></li>
+            <li><a href="formularioContacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Inscripcion</a></li>
+        </ul>
+      </div>
+      <div class="social-M">
+        <img src="./img/social-media/043-twitter.png" alt="twitter">
+        <img src="./img/social-media/029-telegram.png" alt="telegram">
+        <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
+        <img src="./img/social-media/038-github.png" alt="github">
+        <img src="./img/social-media/013-skype.png" alt="skype">
+        <img src="./img/social-media/016-twitch.png" alt="twitch">
+        <img src="./img/social-media/021-facebook.png" alt="facebook">
+      </div>
+    </footer>
+</html>

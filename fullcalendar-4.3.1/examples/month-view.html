@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='../packages/core/main.css' rel='stylesheet' />
+<link href='../packages/daygrid/main.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="../../css/estilosMain.css">
+<link rel="icon" type="image/png" href="../../img/logo.png">
+<script src='../packages/core/main.js'></script>
+<script src='../packages/interaction/main.js'></script>
+<script src='../packages/daygrid/main.js'></script>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/funciones.js"></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid' ],
+      defaultDate: '2019-08-12',
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'Entrega premios',
+          start: '2019-08-01'
+        },
+        {
+          title: 'Curso JavaScript Gratis',
+          start: '2019-08-07',
+          end: '2019-08-10'
+        },
+        {
+          groupId: 999,
+          title: 'Cena anual',
+          start: '2019-08-09T16:00:00'
+        },
+        {
+          groupId: 999,
+          title: 'Entrevistas',
+          start: '2019-08-16T16:00:00'
+        },
+        {
+          title: 'Exposicion de proyectos',
+          start: '2019-08-11',
+          end: '2019-08-13'
+        },
+     
+        {
+          title: 'Dia libre',
+          start: '2019-08-18T12:00:00'
+        },
+       
+        {
+          title: 'Aniversario',
+          start: '2019-08-30T17:30:00',
+            
+        },
+        {
+          title: 'Feriado',
+          start: '2019-08-21T20:00:00'
+        },
+        {
+          title: 'Test psicologico',
+          start: '2019-08-13T07:00:00'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+    
+    
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #202020;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 2em auto;
+      background-color: #b2b2b2;
+  }
+
+</style>
+</head>
+<body>
+<header id="header-id" class="header">
+     <section class="seccion-header">
+        <img src="../../img/logo.png" alt="logo" id="logo">
+        <label for="buscador"></label>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Cursos">
+          <option value="Contacto">
+          <option value="GiftCard">
+          <option value="Inscripcion">
+        </datalist>
+        <article class = "carrito-fig">
+          <img src="../../img/retail/049-shopping-cart.png" alt="logo" id= "carrito" >
+          <p id="total">0</p>
+        </article>
+        <a class="desplegable"></a>
+      </section>
+      <nav class="nav-menu">
+        <ul class="header">
+          <li><a href="../../index.html#header-id">Inicio</a></li>
+          <li><a href="month-view.html">Calendario</a></li>
+          <li><a href="../../giftCard.html">GiftCard</a></li>
+          <li><a href="../../formularioContacto.html">Contacto</a></li>
+          <li><a href="../../formulario.html">Inscripcion</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div id='calendar'></div>
+
+</body>
+</html>

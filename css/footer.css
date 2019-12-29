@@ -1,0 +1,36 @@
+.footer{
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background: #2A2A2A;
+}
+
+.footer div{
+	padding: 1%;
+	position: relative;
+	width:calc(30% - 1em);
+}
+
+.footer li,a{
+	text-decoration: none;
+	font-family: sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+}
+
+.footer h3{
+	color: #f5f5f5;
+}
+
+.social-M{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social-M img{
+	height: 50px;
+}

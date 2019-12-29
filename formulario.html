@@ -2,93 +2,102 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="css/estiloFormulario.css">
+    <title>Informacion del curso</title>
+	<link rel="icon" type="image/png" href="img/logo.png">
+   <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximumscale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js">
+      </script>
+    <script src="js/formulario.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   </head>
-  <body>
-    <header>
-     <section class="section-A">
-      <img src="./img/logo.png" alt="logo" class="logo-A" width="130px">
-      <datalist id="lista">
-          <option value="Cursos"></option>
-          <option value="Contacto"></option>
-          <option value="Calendario"></option>
-      </datalist>
-      <label for="buscador"></label>
-      <input type="text" id="buscador-A" name="buscador" placeholder="Busque aqui" list="lista">
-      <div class="carrito-A">
-          <div class="circulito-A">1</div>
-      </div>
+  <body> 
+    <header id="header-id" class="header">
+       <section class="seccion-header">
+        	<img src="./img/logo.png" alt="logo" id="logo">
+        	<label for="buscador"></label>
+        	<input list="browsers" name="browser">
+        	<datalist id="browsers">
+          	<option value="Cursos">
+          	<option value="Contacto">
+          	<option value="GiftCard">
+      			<option value="Inscripcion">
+    			</datalist>
+  				<article class = "carrito-fig">
+  					<img src="./img/tickets.png" alt="logo" id= "carrito" >
+  	      	<p id="total">0</p>
+            <a class="desplegable"></a>
+  				</article>
         </section>
-    </header>
-    <section>
-      <h1>Menu</h1>
-    </section>
+         <div id="ex1" class="modal">
+  <p id="modal"></p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
+          <nav class="nav-menu">
+            <ul class="header">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="fullcalendar-4.3.1/examples/month-view.html">Calendario</a></li>
+              <li><a href="giftCard.html">GiftCard</a></li>
+              <li><a href="formularioContacto.html">Contacto</a></li>
+              <li><a href="formulario.html">Inscripcion</a></li>
+            </ul>
+          </nav>				
+      </header>
     <main>
-       <h2>Curso desarrollo web</h2>
-       <h3>Inscripcion</h3>
-        <section >
-            <article class="contenedor1a">
-            <label for="nombre"></label>
-            <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required >
-            <label for="apellido"></label>
-            <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required >
-            <label for="dni"></label>
-            <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required >
-            <div id="menos-A"></div>
+       <h2 class="tituloCurso">Curso desarrollo web</h2>
+       <h2 class="tituloInscripcion">Inscripcion</h2>
+        <section class="inscripcion">
+            <article class="contenedorCampos">
+              <div class="div-campos">
+                <label for="nombre"></label>
+                <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required class="campoInscripcion" >
+                <label for="apellido"></label>
+                <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required  class="campoInscripcion">
+                <label for="dni"></label>
+                <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required class="campoInscripcion">
+              </div>
+              <div class="div-clonar-eliminar">
+                <button class="clonar" >+</button>
+                 <button class="eliminar">-</button>
+              </div>
             </article>
-       
+            <article class="botonInscribirseMasPrecio">
+        <h4 class="precioInscribirse"></h4>
+       <p><a href="#ex1" rel="modal:open" class="botonInscribirse">Inscribirse</a></p>
+        </article>
         </section>
-          <section >
-           <article class="contenedor2a">
-            <label for="nombre"></label>
-            <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required >
-            <label for="apellido"></label>
-            <input type="text" id="apellido-A" name="apellido" placeholder="Ingrese apellido" required>
-            <label for="dni"></label>
-            <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required>
-               <div id="menos-A"></div>
-              </article>        
-        </section>
-          <section >
-           <article class="contenedor3a">
-            <label for="nombre"></label>
-            <input type="text" id="nombre-A" name="nombre" placeholder="Ingrese nombre " required >
-            <label for="apellido"></label>
-            <input type="text" id="apellido-A" name="apellido"  placeholder="Ingrese apellido" required>
-            <label for="dni"></label>
-            <input type="text" id="dni-a" name="dni" placeholder="Ingrese dni" required >
-            <div id="menos-A"></div>
-            </article>
-        </section>
-        <section class="contenedorA4">
-             <h3>Agregar persona</h3>
-             <div id="mas-A"></div>
-        </section>
-        
     </main>
-    <footer class="footer-M">
-      <div>
-        <h3>Datos del grupo</h3>
-        <ul>
-          <li>Sanchez Matias</li>
-          <li>Faginas Agustin</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Menu</h3>
-        <ul>
-          <li>Inicio</li>
-          <li>Cursos</li>
-          <li>Medios de Pago</li>
-        </ul>
-      </div>
-      <div class="social-M">
-        <a href="https://twitter.com" class="social-link twitter" target="_blank"></a>
-        <a href="https://facebook.com" class="social-link facebook" target="_blank"></a>
-        <a href="https://github.com" class="social-link github" target="_blank"></a>
-        <a href="https://instagram.com" class="social-link instagram" target="_blank"></a>
-      </div>
-    </footer>
+    <footer class="footer">
+        <div>
+          <h3>Datos del grupo</h3>
+          <ul>
+            <li>Sanchez Matias(39.744.903)</li>
+            <li>Faginas Agustin(42.649.660)</li>
+            <li>Marcos Cervera(39.268.060)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#header-id">Inicio</a></li>
+              <li><a href="#cursos-id">Cursos</a></li>
+              <li><a href="giftCard.html">GiftCard</a></li>
+              <li><a href="formularioContacto.html">Contacto</a></li>
+              <li><a href="formulario.html">Inscripcion</a></li>
+          </ul>
+        </div>
+        <div class="social-M">
+          <img src="./img/social-media/043-twitter.png" alt="twitter">
+          <img src="./img/social-media/029-telegram.png" alt="telegram">
+          <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
+          <img src="./img/social-media/038-github.png" alt="github">
+          <img src="./img/social-media/013-skype.png" alt="skype">
+          <img src="./img/social-media/016-twitch.png" alt="twitch">
+          <img src="./img/social-media/021-facebook.png" alt="facebook">
+        </div>
+      </footer>
   </body>
 </html>

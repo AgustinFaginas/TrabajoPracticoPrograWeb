@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+  padding: 0;
+}
+html
+{
+  padding: 25px;
+}
+body
+{
+    background-color: #202020;
+}
+
+h1, h3, h4, h5, h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+
+.header
+{
+   background-color: #2b2b2b;
+}
+
+.nav-menu{
+	clear: both;
+	margin-top: 2%;
+}
+
+.nav-menu ul
+{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.nav-menu li
+{
+  padding: 1%;
+}
+
+.nav-menu li:hover
+{
+  color: #b2b2b2;
+}
+
+.nav-menu li a
+{
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #fff;
+}
+
+.nav-menu ul a:hover
+{
+  font-weight: bold;
+}
+
+.header
+{
+  position: relative;
+}
+
+.header input
+{	
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+	box-sizing: border-box;
+  padding: 10px 2px 5px 5px;
+  width: 70%;
+  background-color: #2b2b2b;
+  color: #fff;
+  position: absolute;
+  float: left;
+  top: 20%;
+  left: 17%;
+	border-radius: 150px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+#logo{
+	float: left;
+	position: relative;
+	left: 15px;
+	width: 10%;
+}
+
+#carrito{
+	float: right;
+	position: relative;
+	top:20px;
+	right: 50px;
+	width: 4%;
+
+}
+#total{
+  	float: right;
+    position: absolute;
+		top: 0px;
+    left:53px;
+    background-color: white;
+    border-radius: 30%;;
+    width: 20px;
+    text-align: center;
+
+}

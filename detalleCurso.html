@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Detalle Curso</title>
+    <link rel="stylesheet" type="text/css" href="css/estilosMain.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  </head>
+  <header id="header-id" class="header">
+     <section class="seccion-header">
+      	<img src="./img/logo.png" alt="logo" id="logo">
+      	<label for="buscador"></label>
+      	<input list="browsers" name="browser">
+      	<datalist id="browsers">
+        	<option value="Cursos">
+        	<option value="Contacto">
+        	<option value="GiftCard">
+    			<option value="Inscripcion">
+  			</datalist>
+				<article class = "carrito-fig">
+					<img src="./img/tickets.png" alt="logo" id= "carrito" >
+	      	<p id="total">0</p>
+				</article>
+      </section>
+        <nav class="nav-menu">
+          <ul class="header">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="fullcalendar-4.3.1/examples/month-view.html">Calendario</a></li>
+            <li><a href="giftCard.html">GiftCard</a></li>
+            <li><a href="formularioContacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Inscripcion</a></li>
+          </ul>
+        </nav>
+				<a class="desplegable"></a>
+    </header>
+  <body>
+   <div id="ex1" class="modal">
+  <p>Te inscribiste al curso de javaScript:<br>
+    .Valor: 2500$<br>
+    .Tiempo de dedicación: 8hs semanales<br>
+    .Descripción del curso: Avanzado<br>
+    .Requisitos previos: Saber las bases de programación
+  </p>
+  <a href="#" rel="modal:close">Close</a>
+</div>
+    <section class="detalle-curso">
+      <div class="informacion-curso">
+        <h2 >Curso avanzado javascript</h2>
+        <li class="">
+          <ol>•  Valor: 2500$</ol>
+          <ol>•  Tiempo de dedicación: 8hs semanales</ol>
+          <ol>•  Descripción del curso: Avanzado</ol>
+          <ol>•  Requisitos previos: Saber las bases de programación</ol>
+        </li>
+        <div class="div-boton-inscribirse">
+          <a href="#ex1" rel="modal:open">Inscribirse</a>
+        </div>
+        <h2>Contenido</h2>
+        	<div class="faq">
+		          <div class="title-tab"><i class="fa fa-1x"></i>Contenido 1</div>
+		          <div class="content-tab">Clase teorica sobre historia y primeros pasos en javaScript</div>
+		          <div class="title-tab"><i class="fa fa-1x"></i>Contenido 2</div>
+		          <div class="content-tab">Primer clase en computadora , ejercicios basicos y acceso a elementos</div>
+		          <div class="title-tab"><i class="fa fa-1x"></i>Contenido 3</div>
+		          <div class="content-tab">Validaciones de formularios y ejercicios mas complejos</div>
+		          <div class="title-tab"><i class="fa fa-1x"></i>Contenido 4</div>
+		          <div class="content-tab">Trabajo integratorio final con todos los temas vistos en la cursada.</div>
+	        </div>
+      </div>
+      <div class="div-imagen-detalle-curso">
+        <img src="img/javascript.png" alt="foto del curso" class="imagen-detalle-curso">
+      </div>
+    </section>
+    <h2>Docente</h2>
+    <section class="detalle-docente">
+      <div class="div-imagen-detalle-docente1">
+        <img src="img/foto-profesor.jpg" alt="Foto de profesor" >
+      </div>
+      <div class="div-imagen-detalle-docente2">
+        <h3>Tim Berners-Lee</h3>
+        <div class="div-imagen-estrellitas">
+          <img src="img/calificacion-estrella.png" alt="estrellitas">
+        </div>
+        <p>
+          Soy desarrollador web en una empresa y llevo inmerso en el mundo de la programación y la informática desde los 15 años.
+          Me encanta programar y todo lo relacionado con Internet y las nuevas tecnologías, crear cosas y enseñar a los demás.
+          Soy casi completamente autodidacta, por eso voy a ofrecerte muchos de mis conocimientos para que tú puedas aprender más fácilmente y más rápido de lo que yo lo hice y hago cada día.
+          Quizas me conoce por mi pequeño proyecto llamado HTML.
+        </p>
+      </div>
+    </section>
+    <section>
+        <h2 id="cursos-id">Cursos Destacados</h2>
+        <div class="contenedorCursos">
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/java.png" alt="java">
+                    <p>Curso Java avanzado</p>
+                    <div>45hs</div>
+                    <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                    </p>
+                  <button type="button" name="button"  onclick="incrementar()">Comprar</button>
+            </article>
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/rubi.png" alt="rubi" >
+                    <p>Curso Rubi</p>
+                    <div>75hs</div>
+                    <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                    </p>
+                  <button type="button" name="button">Comprar</button>
+            </article>
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/python.png" alt="python">
+                    <p>Curso Python de 0 a Ninja</p>
+                    <div>255hs</div>
+                    <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                    </p>
+                  <button type="button" name="button">Comprar</button>
+            </article>
+            <article class="contenedorImagen">
+                    <img src="./img/lenguajes/node.png" alt="node">
+                    <p>Curso Node principiantes</p>
+                <div>85hs</div>
+                  <p class="textoDerecha">
+                      <a href="detalleCurso.html">Ver Detalle</a>
+                  </p>
+                  <button type="button" name="button">Comprar</button>
+            </article>
+          </section>
+  </body>
+  <footer class="footer">
+      <div>
+        <h3>Datos del grupo</h3>
+        <ul>
+          <li>Sanchez Matias(39.744.903)</li>
+          <li>Faginas Agustin(42.649.660)</li>
+          <li>Marcos Cervera(39.268.060)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#header-id">Inicio</a></li>
+            <li><a href="#cursos-id">Cursos</a></li>
+            <li><a href="giftCard.html">GiftCard</a></li>
+            <li><a href="formularioContacto.html">Contacto</a></li>
+            <li><a href="formulario.html">Inscripcion</a></li>
+        </ul>
+      </div>
+      <div class="social-M">
+        <img src="./img/social-media/043-twitter.png" alt="twitter">
+        <img src="./img/social-media/029-telegram.png" alt="telegram">
+        <img src="./img/social-media/035-whatsapp.png" alt="whatsapp">
+        <img src="./img/social-media/038-github.png" alt="github">
+        <img src="./img/social-media/013-skype.png" alt="skype">
+        <img src="./img/social-media/016-twitch.png" alt="twitch">
+        <img src="./img/social-media/021-facebook.png" alt="facebook">
+      </div>
+    </footer>
+</html>
